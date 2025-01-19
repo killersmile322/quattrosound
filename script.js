@@ -1,1 +1,2 @@
-alert('Zdarova,epta');
+console.log("Zdarova,epta");
+
