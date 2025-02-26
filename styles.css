@@ -1,15 +1,17 @@
 body {
     margin:0;
     padding: 0;
+    background-color:#171616 ;
 }
 
 .main-header{
     margin:0;
-    padding: 14px 48px;
-    width: 1440px;
+    padding: 26px 160px;
+    width: 1120px;
     height: 64px;  
     display: flex;
-    gap:48px
+    gap:48px;
+    align-items: center;
 }
 
 .main-logo {
@@ -26,8 +28,17 @@ body {
     list-style: none;
     display:flex;
     gap:24px;
+}
 
+.navigation-list a {
+    color: white;
+    text-decoration: none;
+}
 
+.navigation-item {
+    font-size: 16px;
+    color: #fff;
+    
 }
 
 .social {
@@ -46,6 +57,7 @@ body {
     display:flex;
     margin-top: 175px;
     
+    
 }
 
 .promo-item {
@@ -56,17 +68,17 @@ body {
     margin-left: 156px;
     margin-right: 203px;
     border-radius: 10px;
-    border: 1px solid black;
+   
 
 }
 
 .promo-parag {
     margin: 0;
     padding: 0;
+    width: 443px;
     font-size: 96px;
     line-height: 90px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Inter", serif;
      margin-bottom: 24px;
 }
 
@@ -79,31 +91,172 @@ body {
      margin-bottom: 59px;
 }
 
+.sale-button {
+    width: 304px;
+    margin: 0;
+    /* padding: 0; */
+    padding: 24px 48px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 24px;
+    background-color: red;
+    border-radius: 12px;
+}
+
+.note-sign {
+    margin: 0;
+    padding: 3px 6px;
+}
+
+.sale-text {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+
+}
+
 .promo-player {
     margin: 0;
     padding: 0;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 12px;
+    
 }
 
-.promo-music-genres {
+.promo-music-list {
+    list-style: none;
+    font-size: 14px;
+    margin: 0;
+    padding:24px;
     position: absolute;
     left: 1078px;
     top:174px;
     background-color: blue;
-    color:whitesmoke;
-    width: 200px;
-    height: 220px;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-
-.promo-music-list {
-    padding:24px;
-    margin:0;
-    list-style: none;
+    color: #E0E0E0;
+    width: 176px;
+    height: 193px;
+    border-radius: 12px;
+   
     display: flex;
     flex-direction: column;
     gap:10px;
+    background-color: #333;
+    justify-content: space-between;
+}
 
+/* .promo-music-list {
+  
+} */
+
+.gallery {
+    padding: 64px 164px;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.gallery h1 {
+    margin:0;
+    margin-bottom: 48px;
+}
+
+.gallery p {
+    margin:0;
+    margin-bottom: 48px; 
+}
+
+.gallery-photo {
+    display: flex;
+    width: 1116px;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.gallery-photo-item {
+    width: 242px;
+    height: 392px;
+    background-color: aliceblue;
+
+}
+
+.gallery-video {
+    display: flex;
+    justify-content: space-between;
+    width: 1116px;
+}
+
+.gallery-video-item {
+    width: 340px;
+    height: 392px;
+    background-color: aliceblue;
+}
+
+.about-us {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 96px;
+    color: #fff;
+    padding: 24px 164px;
+}
+
+.about-us h1 {
+    margin: 0;
+    margin-bottom: 48px;
+    
+}
+
+.about-us-info {
+    padding: 0;
+    margin: 0;
+    width: 546px;
+    height: 703px;
+}
+
+.about-us-table {
+    padding: 0;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quartet-bio {
+    padding: 0 162px;
+    margin: 0;
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    width: 1120px;
+    height: 720px;
+}
+
+.quartet-bio-item {
+    padding: 0;
+    margin: 0;
+
+}
+
+.music-player-full {
+    padding: 0 162px;
+    margin: 0;
+    margin-bottom: 121px;
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    
+}
+
+.music-player-item {
+    width: 280px;
+    height: 360px;
+   
+}
+
+.music-player-item:nth-child(4) {
+    width: 200px;
+    height: 290px;
+    background-color: aqua;
 }
