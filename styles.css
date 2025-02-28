@@ -61,8 +61,7 @@ body {
     padding: 0;
     display:flex;
     margin-top: 175px;
-    
-    
+    margin-bottom: 150px;  
 }
 
 .promo-item {
@@ -73,8 +72,6 @@ body {
     margin-left: 156px;
     margin-right: 203px;
     border-radius: 10px;
-   
-
 }
 
 .promo-parag {
@@ -124,9 +121,95 @@ body {
 
 .promo-player {
     margin: 0;
-    padding: 0;
-    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 20px;
     
+}
+
+.music-name {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.artist-name {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.music-background {
+    position: relative;
+    margin: 40px auto;
+    display: block;
+    width: 180px;
+    height: 180px;
+    background-image: url(images/metel.jpeg);
+    background-size: cover;
+}
+
+.song-slider {
+    position: relative;
+    width: 100%;
+}
+
+.seek-bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color:chocolate;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.play-btn {
+    margin: 0 10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url(images/play-button.png);
+    /* url(images/pause.png) */
+    background-size: cover;
+    /* border: none; */
+}
+
+.pause-btn {
+    margin: 0 10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background:url(images/pause.png);
+    background-size: cover;
+
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .promo-music-list {
@@ -142,7 +225,6 @@ body {
     width: 176px;
     height: 193px;
     border-radius: 12px;
-   
     display: flex;
     flex-direction: column;
     gap:10px;

@@ -34,3 +34,21 @@ for (let i = 0; i < navButtons.length; i++ ) {
     
 // });
 
+let currentMusic = 0;
+
+const music = document.querySelector('#audio');
+// const seekBar;
+// const songName;
+// const artistName;
+// const musicBackground;
+// const currentTime;
+// const musicDuration;
+const musicBtn = document.querySelector('.music-btn');
+const forwardBtn = document.querySelector('.forward-btn');
+const backBtn = document.querySelector('.back-btn');
+
+musicBtn.addEventListener('click', () => {
+    musicBtn.classList.toggle('play-btn');
+    musicBtn.classList.toggle('pause-btn');
+
+})
