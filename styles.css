@@ -91,6 +91,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      margin-bottom: 59px;
+     color: white;
 }
 
 .sale-button {
@@ -154,7 +155,7 @@ body {
     display: block;
     width: 180px;
     height: 180px;
-    background-image: url(images//player/metel.jpeg);
+    /* background-image: url(images//player/metel.jpeg); */
     background-size: cover;
     box-shadow: 0 0 8px 4px #303c54;
     border-radius: 20px;
@@ -205,8 +206,8 @@ body {
     transform: translateY(-50%);
     border-radius: 2px;
     background: #5f7a61;
-    transition: 0.5s;
-    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%)    ;
+    transition: .4s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)    ;
 }
 
 .play-btn span:nth-child(2) {
@@ -219,7 +220,7 @@ body {
     left: 53%;
     transform: translate(-50%, -50%);
     border-radius: 0;
-    clip-path: polygon(0 1%, 100% 50%, 100% 50%, 0% 100%);
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
 }
 
 .play-btn.pause span:nth-child(2) {
@@ -408,3 +409,37 @@ body {
   .shown {
     display: inline-block;
   }
+
+  .form {
+    padding: 0 162px;
+    margin: 0;
+    width: 650px;
+    height: 685px;
+    
+  }
+
+  .form-table {
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    background-color: rgb(98, 95, 134);
+    justify-content: space-between;
+  }
+
+  .form-table input {
+    min-width: 20%;
+  }
+
+  label {
+    color: wheat;
+  }
+
+   .half-width {
+    width: 45%;
+  }
+
+  /* .quarterw-width {
+    width: 22.5%;
+  } */
