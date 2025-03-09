@@ -124,12 +124,14 @@ body {
     padding: 30px;
     width: 350px;
     height: 450px;
-    background-color: #fff;
+    background-color: #56709c;
     border-radius: 20px;
+    box-shadow: 0 0 20px  #56709c;
+    color: #fff;
     
 }
 
-.music-name {
+.song-name {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -152,8 +154,10 @@ body {
     display: block;
     width: 180px;
     height: 180px;
-    background-image: url(images/metel.jpeg);
+    background-image: url(images//player/metel.jpeg);
     background-size: cover;
+    box-shadow: 0 0 8px 4px #303c54;
+    border-radius: 20px;
 }
 
 .song-slider {
@@ -166,7 +170,7 @@ body {
     height: 5px;
     border-radius: 10px;
     cursor: pointer;
-    background-color:chocolate;
+    
 }
 
 .controls {
@@ -181,29 +185,63 @@ body {
 .play-btn {
     margin: 0 10px;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     cursor: pointer;
-    background: url(images/play-button.png);
+    border: none;
+    /* background: url(images/play-button.png); */
     /* url(images/pause.png) */
     background-size: cover;
     /* border: none; */
 }
 
-.pause-btn {
+.play-btn span {
+    position: absolute;
+    top: 50%;
+    left:25%;
+    width:10px;
+    height: 30px;
+    transform: translateY(-50%);
+    border-radius: 2px;
+    background: #5f7a61;
+    transition: 0.5s;
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%)    ;
+}
+
+.play-btn span:nth-child(2) {
+    left:55%;
+    transform-origin: center;
+}
+
+.play-btn.pause span:nth-child(1) {
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 1%, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn.pause span:nth-child(2) {
+    transform:translateY(-50%) scale(0) ;
+
+}
+
+/* .pause-btn {
     margin: 0 10px;
     position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    background:url(images/pause.png);
-    background-size: cover;
+    /* background:url(images/pause.png); */
+    /* background-size: cover; */
 
-}
+/* } */
 
 .btn {
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,8 +342,9 @@ body {
 .about-us-table {
     padding: 0;
     margin:0;
+    gap:22px;
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .quartet-bio {
