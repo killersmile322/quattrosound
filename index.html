@@ -171,7 +171,7 @@
     <div class="form-container">
         <header>Get in touch with us today to see how we can help you<br> develop the right assets — faster.</header>
         <form action="#">
-            <div class="form-first">
+            <div class="form">
                 <div class="details">
                     <span class="title">Choose One:*</span>
                     <div class="form-change-btns">
@@ -181,31 +181,54 @@
                     </div>
                 </div>
                 <div class="form-field">
-                    <div class="fields-one">
+                    <div class="fields-one active">
                         <div class="input-field">
-                            <input type="text" placeholder="First name*" required>
+                            <input type="text" placeholder="First name*" name="Name" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" placeholder="Last name*" required>
+                            <input type="text" placeholder="Last name*" name="Surname" required>
                         </div>
                         <div class="input-field">
-                            <input type="text" placeholder="Company*" required>
+                            <input type="text" placeholder="Company*" name="Company" required>
                         </div>
                         <div class="input-fields-small">
                             <div class="input-field">
-                                <input type="email" placeholder="Email*" required>
+                                <input type="email" placeholder="Email*" name="Email" required>
                             </div>
                             <div class="input-field">
-                                <input type="tel" placeholder="Phone*" required>
+                                <input type="tel" data-tel-input placeholder="Phone*" name="Phone" id="phone-field"required>
                             </div>
                         </div>
                         <div class="input-field">
                             <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
-                                placeholder="Комментарии к мероприятию"></textarea>
+                                placeholder="Комментарии к мероприятию" name="Comments"></textarea>
                         </div>
                     </div>
                     <div class="fields-two">
                         <div class="input-field">
+                            <input type="text" placeholder="kaka*" name="Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="pipi*" name="Surname" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="sisi*" name="Company" required>
+                        </div>
+                        <div class="input-fields-small">
+                            <div class="input-field">
+                                <input type="email" placeholder="momo*" name="Email" required>
+                            </div>
+                            <div class="input-field">
+                                <input type="tel" placeholder="bobo*" name="Phone" required>
+                            </div>
+                        </div>
+                        <div class="input-field">
+                            <textarea name="comments" id="comment-field-two" rows="10" cols="55" class="text-area-field"
+                                placeholder="Комментарии к мероприятию" name="Comments"></textarea>
+                        </div>
+                    </div>
+                    <!-- <div class="fields-three">
+                        <div class="input-field">
                             <input type="text" placeholder="First name*" required>
                         </div>
                         <div class="input-field">
@@ -226,33 +249,10 @@
                             <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
                                 placeholder="Комментарии к мероприятию"></textarea>
                         </div>
-                    </div>
-                    <div class="fields-three">
-                        <div class="input-field">
-                            <input type="text" placeholder="First name*" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Last name*" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Company*" required>
-                        </div>
-                        <div class="input-fields-small">
-                            <div class="input-field">
-                                <input type="email" placeholder="Email*" required>
-                            </div>
-                            <div class="input-field">
-                                <input type="tel" placeholder="Phone*" required>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
-                                placeholder="Комментарии к мероприятию"></textarea>
-                        </div>
-                    </div>
-                    <div class="submit-btn">
-                        <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
-                    </div>
+                    </div> -->
+                </div>
+                <div class="submit-btn">
+                    <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
                 </div>
             </div>
         </form>
@@ -264,6 +264,7 @@
     <footer></footer>
     <script src="data.js?v=1"></script>
     <script src="script.js?v=1"></script>
+    <script src="phoneScript.js"></script>
 </body>
 
 </html>

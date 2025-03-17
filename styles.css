@@ -414,25 +414,64 @@ body {
     line-height: 30px;
 }
 
-.form-first {
+.form-field {
     position: relative;
+    border-radius: 6px;
+    padding: 30px;
+    height: 400px;
+    background-color: floralwhite;
 }
 
 .fields-one {
-    position: relative;
+    position: absolute;
+    /* z-index: 0; */
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fields-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    transition: all 1s ease-in-out;
+    /* transform: translateX(100%); */
+}
+
+.fields-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    transition: all 1s ease-in-out;
+}
+
+.fields-one.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .fields-two{
     position: absolute;
     content: '';
-    top: 0%;
-    left: 0%;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    /* display: none; */
+    /* overflow: none; */
+    /* opacity: 0; */
+    /* z-index:  1; */
 }
 
-.fields-three {
-    display: none; 
+.fields-two.active {
+    opacity: 1;
+    pointer-events: auto;
 }
+
+/* .fields-three {
+    display: none; 
+} */
 
 .details {
     width: 480px;
@@ -446,7 +485,6 @@ body {
 }
 
 .form-change-btns{
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -456,26 +494,13 @@ body {
     margin: 0;
     padding: 12px 30px;
     border-radius: 25px;
+    
 }
 
-.form-field {
-    position: relative;
-    border-radius: 6px;
-    padding: 30px;
-    min-height: 490px;
-    background-color: floralwhite;
-}
 
-.fields-one {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-}
 
 .input-field {
-    width: calc(100% / 2 - 22px);
+    width: calc(100% / 2 - 30px);
     padding: 0;
     /* padding-left:12px; */
 }
@@ -486,6 +511,7 @@ body {
     border: none;
     border-bottom: 2px solid black;
     background-color: floralwhite;
+    box-sizing: border-box;
 }
 
 /* .fields .input-field:nth-child(4),
@@ -497,11 +523,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 438px;
+    width: 445px;
+    
 }
 
 .input-fields-small input {
-    width: 200px;
+     width: 100%;
+     box-sizing: border-box;
 }
 
 /* Пока не знаю как сделать отсутствие полей в фокусе */
@@ -522,6 +550,8 @@ body {
 .submit-btn input {
     padding:12px 50px;
     border-radius: 25px;
-    margin-top: 90px;
+    margin: 25px;
     background-color: floralwhite;
+    /* margin-left: 200px; */
+    
 }

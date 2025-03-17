@@ -105,3 +105,31 @@ backBtn.addEventListener('click', () => {
     setMusic(currentMusic);
     playMusic();
 });
+
+// Форма
+
+const form = document.querySelector('form'),
+    formButtons = form.querySelectorAll('.title-btn'),
+    allInputs = form.querySelectorAll('input'),
+    submitBtn = form.querySelector('.submit-btn');
+const fieldsOne = document.querySelector('.fields-one');
+const fieldsTwo = document.querySelector('.fields-two');
+
+// console.log(fieldsOne)
+
+for (let i = 0; i < formButtons.length; i++) {
+    formButtons[i].addEventListener('click', () => {
+        if (i === 1) {
+            fieldsOne.classList.remove('active');
+            fieldsTwo.classList.add('active');
+        } else if (i === 0){
+            fieldsTwo.classList.remove('active');
+            fieldsOne.classList.add('active');
+        } else {
+            fieldsTwo.classList.remove('active');
+            fieldsOne.classList.remove('active');
+        }
+    })
+}
+
+
