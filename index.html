@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="form.css?v=1">
 </head>
 
 <body>
@@ -168,41 +169,38 @@
             </ul>
         </div>
     </div>
-    <div class="form-container">
-        <header>Get in touch with us today to see how we can help you<br> develop the right assets — faster.</header>
+    <section id="contact-us-form">
+        <header>Связаться с нами</header>
         <form action="#">
-            <div class="form">
-                <div class="form-field">
-                    <div class="fields-one active">
-                        <div class="input-field">
-                            <input type="text" placeholder="First name*" name="Name" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Last name*" name="Surname" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Company*" name="Company" required>
-                        </div>
-                        <div class="input-fields-small">
-                            <div class="input-field">
-                                <input type="email" placeholder="Email*" name="Email" required>
-                            </div>
-                            <div class="input-field">
-                                <input type="text" id="phone-field" required>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
-                                placeholder="Комментарии к мероприятию" name="Comments"></textarea>
-                        </div>
-                    </div>
+            <div class="input-field">
+                <input type="text" placeholder="First name*" name="Name" required>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Last name*" name="Surname" required>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Company*" name="Company" required>
+            </div>
+            <div class="input-fields-small">
+                <div class="input-field">
+                    <input type="email" placeholder="Email*" name="Email" required>
                 </div>
-                <div class="submit-btn">
-                    <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
+                <div class="input-field">
+                    <input type="text" placeholder="+7(999)888-77-66" id="phone-field" required>
                 </div>
             </div>
+            <div class="input-field">
+                <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
+                    placeholder="Комментарии к мероприятию" name="Comments"></textarea>
+            </div>
+
+
+            <div class="submit-btn">
+                <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
+            </div>
+
         </form>
-    </div>
+    </section>
     <button class="up-button" type="button">
         ↑
         <span class="visually-hidden"></span>
