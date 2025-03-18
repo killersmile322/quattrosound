@@ -1,3 +1,10 @@
+const phone = document.getElementById('phone-field');
+const maskOptions = {
+    lazy: false,
+    mask: '+{7}(000)000-00-00'
+};
+const mask = IMask(phone, maskOptions);
+
 // Скролл
 const navButtons = document.querySelectorAll('.nav-btn');
 const upButton = document.querySelector('.up-button');
