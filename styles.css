@@ -1,557 +1,187 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
+* {
     padding: 0;
-    background-color: #171616;
+    margin: 0;
+    background-color: #161616;
 }
 
 .main-header {
-    margin: 0;
-    padding: 26px 160px;
-    width: 1120px;
-    height: 64px;
+    padding: 34px 120px 12px;
+    width: 1680px;
+    height: 81px;
     display: flex;
-    gap: 48px;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 210px;
 }
 
 .main-logo {
-    margin: 0;
-    padding: 0;
+    width: 142px;
+    height: 35px;
+    /* display: block; */
 }
 
-/* .header-navigation {
-   
-} */
+.main-navigation {
+    width: 413px;
+    height: 39px;
+}
 
 .navigation-list {
-    list-style: none;
     display: flex;
-    gap: 24px;
-}
-
-.navigation-list a {
-    color: white;
-    text-decoration: none;
+    font-size: 16px;
+    list-style: none;
+    justify-content: space-between;
 }
 
 .navigation-item {
-    font-size: 16px;
-    color: #fff;
+    padding: 11.2px 16px;
 }
 
-.social {
-    margin-left: auto;
+.navigation-item a {
+    color: #c4c4c4;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
 
-.social-list {
-    list-style: none;
-    display: flex;
-    gap: 24px;
+#to-buy {
+    border: 1px solid #ffffff;
+    border-radius: 25px;
 }
 
 .promo {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    margin-top: 175px;
-    margin-bottom: 150px;
-}
-
-.promo-item {
-    margin: 0;
-    padding: 0;
-    width: 444px;
-    height: 384px;
-    margin-left: 156px;
-    margin-right: 203px;
-    border-radius: 10px;
-}
-
-.promo-parag {
-    margin: 0;
-    padding: 0;
-    width: 443px;
-    font-size: 96px;
-    line-height: 90px;
-    font-family: 'Inter', serif;
-    margin-bottom: 24px;
-}
-
-.promo-text {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-bottom: 59px;
-    color: white;
-}
-
-.sale-button {
-    width: 304px;
-    margin: 0;
-    /* padding: 0; */
-    padding: 24px 48px;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    height: 24px;
-    background-color: red;
-    border-radius: 12px;
-}
-
-.note-sign {
-    margin: 0;
-    padding: 3px 6px;
-}
-
-.sale-text {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    color: #fff;
-}
-
-.promo-player {
-    margin: 0;
-    padding: 30px;
-    width: 350px;
-    height: 450px;
-    background-color: #56709c;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #56709c;
-    color: #fff;
-}
-
-.song-name {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.artist-name {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-}
-
-.music-background {
-    position: relative;
-    margin: 40px auto;
-    display: block;
-    width: 180px;
-    height: 180px;
-    /* background-image: url(images//player/metel.jpeg); */
-    background-size: cover;
-    box-shadow: 0 0 8px 4px #303c54;
-    border-radius: 20px;
-}
-
-.song-slider {
-    position: relative;
-    width: 100%;
-}
-
-.seek-bar {
-    width: 100%;
-    height: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.controls {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.play-btn {
-    margin: 0 10px;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-    /* background: url(images/play-button.png); */
-    /* url(images/pause.png) */
-    background-size: cover;
-    /* border: none; */
-}
-
-.play-btn span {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    width: 10px;
-    height: 30px;
-    transform: translateY(-50%);
-    border-radius: 2px;
-    background: #5f7a61;
-    transition: 0.4s;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.play-btn span:nth-child(2) {
-    left: 55%;
-    transform-origin: center;
-}
-
-.play-btn.pause span:nth-child(1) {
-    width: 35%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    border-radius: 0;
-    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
-}
-
-.play-btn.pause span:nth-child(2) {
-    transform: translateY(-50%) scale(0);
-}
-
-/* .pause-btn {
-    margin: 0 10px;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    /* background:url(images/pause.png); */
-/* background-size: cover; */
-
-/* } */
-
-.btn {
-    width: 40px;
-    height: 40px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+    margin-bottom: 200px;
 }
 
-.promo-music-list {
-    list-style: none;
-    font-size: 14px;
-    margin: 0;
-    padding: 24px;
-    position: absolute;
-    left: 1078px;
-    top: 174px;
-    background-color: blue;
-    color: #e0e0e0;
-    width: 176px;
-    height: 193px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #333;
-    justify-content: space-between;
-}
-
-/* .promo-music-list {
-  
-} */
-
-.gallery {
-    padding: 64px 164px;
-    margin: 0;
-    width: 100%;
-    background-color: #fff;
-}
-
-.gallery h1 {
-    margin: 0;
-    margin-bottom: 48px;
-}
-
-.gallery p {
-    margin: 0;
-    margin-bottom: 48px;
-}
-
-.gallery-photo {
-    display: flex;
-    width: 1116px;
-    justify-content: space-between;
-    margin-bottom: 48px;
-}
-
-.gallery-photo-item {
-    width: 242px;
-    height: 392px;
-    background-color: aliceblue;
-}
-
-.gallery-video {
-    display: flex;
-    justify-content: space-between;
-    width: 1116px;
-}
-
-.gallery-video-item {
-    width: 340px;
-    height: 392px;
-    background-color: aliceblue;
-}
-
-.about-us {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 96px;
-    color: #fff;
-    padding: 24px 164px;
-}
-
-.about-us h1 {
-    margin: 0;
-    margin-bottom: 48px;
-}
-
-.about-us-info {
-    padding: 0;
-    margin: 0;
-    width: 546px;
-    height: 703px;
-}
-
-.about-us-table {
-    padding: 0;
-    margin: 0;
-    gap: 22px;
-    display: flex;
-}
-
-.quartet-bio {
-    padding: 0 162px;
-    margin: 0;
-    margin-bottom: 96px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #fff;
-    width: 1120px;
-    height: 720px;
-}
-
-.quartet-bio-item {
-    padding: 0;
-    margin: 0;
-}
-
-.music-player-full {
-    padding: 0 162px;
-    margin: 0;
-    margin-bottom: 121px;
-    display: flex;
-    justify-content: space-between;
-    width: 1120px;
-}
-
-.music-player-item {
-    width: 280px;
-    height: 360px;
-}
-
-.music-player-item:nth-child(4) {
-    width: 200px;
-    height: 290px;
-    background-color: aqua;
-}
-
-.up-button {
-    position: fixed;
-    z-index: 1;
-    padding: 0;
-    bottom: 75px;
-    right: 20px;
-    width: 64px;
-    height: 64px;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    border: 5px solid;
-    border-radius: 50%;
-    display: none;
-    cursor: pointer;
-}
-
-.shown {
-    display: inline-block;
-}
-
-/* form */
-
-.form-container {
-    margin: 0 162px;
-    padding: 0 15px;
-    color: wheat;
-    width: 980px;
-    height: 935px;
-    background-color: #56709c;
+.promo-block {
     position: relative;
-}
-
-.form-container header {
-    margin-bottom: 60px;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.form-field {
-    position: relative;
-    border-radius: 6px;
-    padding: 30px;
+    display: flex;
+    width: 570px;
     height: 400px;
-    background-color: floralwhite;
-}
-
-.fields-one {
-    position: absolute;
-    /* z-index: 0; */
-    opacity: 0;
-    pointer-events: none;
-}
-
-.fields-one {
-    display: flex;
-    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-    transition: all 1s ease-in-out;
-    /* transform: translateX(100%); */
+    
 }
 
-.fields-two {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 15px;
-    transition: all 1s ease-in-out;
-}
-
-.fields-one.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.fields-two{
+.promo-big-logo {
     position: absolute;
     content: '';
-    opacity: 0;
-    pointer-events: none;
-    /* display: none; */
-    /* overflow: none; */
-    /* opacity: 0; */
-    /* z-index:  1; */
+    z-index: 0;
+    top:-20%;
+    left:0%;
+
 }
 
-.fields-two.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* .fields-three {
-    display: none; 
-} */
-
-.details {
-    width: 480px;
-    margin-bottom: 60px;
-}
-
-.details .title {
+.promo-name {
     display: block;
-    margin: 0;
-    margin-bottom: 10px;
+    position: absolute;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    line-height: 60px;
+    letter-spacing: -4%;
+    content: '';
 }
 
-.form-change-btns{
-    display: flex;
-    align-items: center;
+.promo-name.first-stroke{
+    display: block;
+    position: relative;
+    margin-bottom: 23px;
+    
+}  
+
+.promo-info-block {
+    width: 240px;
+    height: 76px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.promo-info-block h4 {
+    /* display: inline-block; */
+    position: relative;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.promo-info-block p {
+    /* display: inline-block; */
+    position: relative;
+    margin-bottom: 44px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+.to-order {
+    position: relative;
+    display: block;
+    width: 210px;
+    color: #ffffff;
+    text-decoration:none ;
+    font-weight: 300;
+    padding: 24px 48px;
+    border: 1px solid #FFFFFF;
+    border-radius: 35px;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.promo-photo-player {
+    position: relative;
+    width: 600px;
+}
+
+.promo-main-photo {
+    position: relative;
+    z-index: 2;
+}
+
+.promo-photo-one {
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    z-index: 1;
+    content: '';
+}
+
+
+.socials-and-button {
+    padding: 0 120px;
+    display: block;
+    width: 1680px;
+    display:flex;
     justify-content: space-between;
 }
 
-.title-btn {
-    margin: 0;
-    padding: 12px 30px;
-    border-radius: 25px;
-    
+.bottom-button {
+   text-transform: uppercase; 
+   text-decoration: none;
+   color: #F7F7F7;
 }
 
-
-
-.input-field {
-    width: calc(100% / 2 - 30px);
-    padding: 0;
-    /* padding-left:12px; */
-}
-
-.input-field input {
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-bottom: 2px solid black;
-    background-color: floralwhite;
-    box-sizing: border-box;
-}
-
-/* .fields .input-field:nth-child(4),
-.fields .input-field:nth-child(5){
-    width: calc(100% / 4 - 15px);
-} */
-
-.input-fields-small {
+.socials-list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 445px;
+    gap:15px;
+    list-style: none;
+    width: 400px;
     
+
 }
 
-.input-fields-small input {
-     width: 100%;
-     box-sizing: border-box;
-}
-
-/* Пока не знаю как сделать отсутствие полей в фокусе */
-/* .input-field input:focus {
-    border: none;
- } */
-
- /* Нужно убрать нижнюю "растяжку". и нужно ли? */
-.text-area-field {
-    padding: 10px;
-/* Не знаю праавильно ли так отставлять блок с коментами или улчше сделать через флекс */
-    margin-top: 50px;
-    background-color: floralwhite;
-    border: none;
-    border-bottom: 2px solid black;
-}
-
-.submit-btn input {
-    padding:12px 50px;
-    border-radius: 25px;
-    margin: 25px;
-    background-color: floralwhite;
-    /* margin-left: 200px; */
+.socials-item a{
     
+    text-decoration: none;
+    color: #F7F7F7;
 }

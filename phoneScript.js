@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
     var phoneInputs = document.querySelectorAll('input[data-tel-input]');
 
     var getInputNumbersValue = function (input) {
         // Return stripped input value — just numbers
         return input.value.replace(/\D/g, '');
-    }
+    };
 
     var onPhonePaste = function (e) {
         var input = e.target,
@@ -19,16 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
         }
-    }
+    };
 
     var onPhoneInput = function (e) {
         var input = e.target,
             inputNumbersValue = getInputNumbersValue(input),
             selectionStart = input.selectionStart,
-            formattedInputValue = "";
+            formattedInputValue = '';
 
         if (!inputNumbersValue) {
-            return input.value = "";
+            return (input.value = '');
         }
 
         if (input.value.length != selectionStart) {
@@ -40,10 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        if (["7", "8", "9"].indexOf(inputNumbersValue[0]) > -1) {
-            if (inputNumbersValue[0] == "9") inputNumbersValue = "7" + inputNumbersValue;
-            var firstSymbols = (inputNumbersValue[0] == "8") ? "8" : "+7";
-            formattedInputValue = input.value = firstSymbols + " ";
+        if (['7', '8', '9'].indexOf(inputNumbersValue[0]) > -1) {
+            if (inputNumbersValue[0] == '9')
+                inputNumbersValue = '7' + inputNumbersValue;
+            var firstSymbols = inputNumbersValue[0] == '8' ? '8' : '+7';
+            formattedInputValue = input.value = firstSymbols + ' ';
             if (inputNumbersValue.length > 1) {
                 formattedInputValue += '(' + inputNumbersValue.substring(1, 4);
             }
@@ -56,28 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
             if (inputNumbersValue.length >= 10) {
                 formattedInputValue += '-' + inputNumbersValue.substring(9, 11);
             }
-            
         } else {
             formattedInputValue = '+' + inputNumbersValue.substring(0, 16);
         }
         input.value = formattedInputValue;
-    }
+    };
     var onPhoneKeyDown = function (e) {
         // Clear input after remove last symbol
         var inputValue = e.target.value.replace(/\D/g, '');
         if (e.keyCode == 8 && inputValue.length == 1) {
-            e.target.value = "";
+            e.target.value = '';
         }
-    }
+    };
     for (var phoneInput of phoneInputs) {
         phoneInput.addEventListener('keydown', onPhoneKeyDown);
         phoneInput.addEventListener('input', onPhoneInput, false);
         phoneInput.addEventListener('paste', onPhonePaste, false);
     }
-
-    
-
-
-})
-
-
+});

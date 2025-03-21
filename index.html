@@ -2,269 +2,64 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header class="main-header">
-        <div class="main-logo"><img src="images/Vector.svg" width="200" height="50"></div>
-        <div class="header-navigation">
-            <ul class="navigation-list">
-                <li class="navigation-item"><a href="#" class="nav-btn">О нас</a></li>
-                <li class="navigation-item"><a href="#" class="nav-btn">Музыка</a></li>
-            </ul>
+        <div class="main-logo">
+            <image src="images/main-logo.svg"></image>
         </div>
-        <div class="social">
-            <ul class="social-list">
-                <li class="social-item"><img src="images/vk.png"></li>
-                <li class="social-item"><img src="images/insta.png"></li>
-                <li class="social-item"><img src="images/you.png"></li>
-                <li class="social-item"><img src="images/face.png"></li>
+        <div class="main-navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item"><a href="">О нас</a></li>
+                <li class="navigation-item"><a href="">Услуги</a></li>
+                <li class="navigation-item"><a href="">Клиенты</a></li>
+                <li class="navigation-item" id="to-buy"><a href="">Бронь</a></li>
             </ul>
         </div>
     </header>
-    <div class="promo">
-        <div class="promo-item">
-            <p class="promo-parag"><span style="color: #fff;">Начни</span> <span style="color: red;">слушать.</span></p>
-            <!-- Есть проблема с вставкой шрифтов-->
-            <p class="promo-text">Выступление струнно-смычкового квартет скрасит любое мероприятие</p>
-            <div class="sale-button">
-                <p class="note-sign"><img src="images/music_note.png" width="12" height="18"></p>
-                <p class="sale-text">Получить скидку на выступление</p>
+    <main class="promo">
+        <div class="promo-block">
+            <div class="promo-name-block">
+                <img src="images/logo-big-background.svg" width="568" height="665" alt="promo-logo"
+                    class="promo-big-logo">
+                <h1 class="promo-name first-stroke">Утонченная Живая</h1>
+                <h1 class="promo-name">Музыка</h1>
+            </div>
+            <div class="promo-info-block">
+                <h4>quattrosound</h4>
+                <p class="promo-info">Очаруйте своё мероприятие живой струнной музыкой</p>
+                <a href="#" class="to-order">Заказать выступление</a>
             </div>
         </div>
-        <audio src="" id="audio"></audio>
-        <div class="promo-player">
-            <h3 class="song-name">
-                Pesnya
-            </h3>
-            <p class="artist-name">
-                Valera
-            </p>
-            <div class="music-background">
-            </div>
-            <div class="song-slider">
-                <input type="range" value="0" class="seek-bar">
-                <!-- <span class="current-time">00:00</span> Не нужно, тк они будут короткие
-                    <span class="song-duretioin">00:00</span> -->
-            </div>
-            <div class="controls">
-                <button class="btn back-btn">
-                    <image src="images/player/pre.png">
-                </button>
-                <button class="play-btn pause">
-                    <span></span>
-                    <span></span>
-                </button>
-                <button class="btn forward-btn">
-                    <image src="images/player/nxt.png">
-                </button>
-            </div>
+        <div class="promo-photo-player">
+            <img class="promo-main-photo" src="images/promo-photo-main.png" width="562" height="518">
+            <img class="promo-photo-one" src="images/promo-photo-1.png" width="562" height="518">
         </div>
+        <br>
+    </main>
+    <div class="socials-and-button">
+        <a class="bottom-button" href="#" ><img src="images/down.png.svg" width=""></a> <!-- мб сделать чуть больше?? уж очень мелкая-->
+        <ul class="socials-list">
+            <li class="socials-item"><a href="#">YouTube</a></li>
+            <li class="socials-item"><a href="#">YouTube</a></li>
+            <li class="socials-item"><a href="#">YouTube</a></li>
+            <li class="socials-item"><a href="#">YouTube</a></li>
+            <li class="socials-item"><a href="#">YouTube</a></li>
+        </ul>
     </div>
-    <div class="gallery">
-        <h1>Фотографии и видео</h1>
-        <p>фото<span>видео</span></p>
-        <div class="gallery-photo">
-            <div class="gallery-photo-item"></div>
-            <div class="gallery-photo-item"></div>
-            <div class="gallery-photo-item"></div>
-            <div class="gallery-photo-item"></div>
-        </div>
-        <div class="gallery-video">
-            <div class="gallery-video-item"></div>
-            <div class="gallery-video-item"></div>
-            <div class="gallery-video-item"></div>
-        </div>
+    <footer>
 
-    </div>
-    <div class="about-us">
-        <h1>О нашем коллективе</h1>
-        <div class="about-us-table">
-            <div class="about-us-info">
-                <p>Струнный квартет «Quattrosound» сложился в 2011г. В его составе — музыканты с высшим музыкальным
-                    образованием, лауреаты различных конкурсов. За время своего существования квартет накопил большой
-                    опыт выступлений на множестве музыкальных площадок, в том числе в сотрудничестве с такими
-                    музыкантами, как Дмитрий Маликов, группа «Несчастный случай» и «Квартет И», Игорь Демарин
-                    (рок-опера «Парфюмер»), Баста, Zivert, МакSим, Елка, Ирина Круг, Ирина Богушевская. В составе
-                    разных коллективов и оркестров квартет также выступал с Геннадием Рождественским, Владимиром
-                    Спиваковым, Юрием Темиркановым, Владимиром Юровским, Юрием Башметом, Михаилом Плетневым,
-                    Александром Рудиным, Элисо Вирсаладзе, Натальей Гутман, а также принимал участие в концертах
-                    Гарика Сукачева с группой «Неприкасаемые», Тамары Гвердцители, Пласидо Доминго, Эннио Морриконе,
-                    Игоря Крутого, Лары Фабиан, группы «Скорпионс», Евы Польны, Jah Khalib, Apocalyptica. И этот
-                    список можно продолжать. В настоящее время квартет ведет активную творческую деятельность,
-                    продолжая делать аудиозаписи, выступать на классической сцене и в эстрадных проектах.
-                    В сольном репертуаре квартета музыка различных эпох, от традиционной классики и романтики
-                    до современных и популярных произведений, джазовые пьесы, музыка из кинофильмов, детские
-                    произведения. Также возможно сделать и исполнить эксклюзивную аранжировку для струнного
-                    квартета практически любого произведения, которое захотят услышать слушатели.</p>
-                <div class="sale-button">
-                    <p class="note-sign"><img src="images/music_note.png" width="12" height="18"></p>
-                    <p class="sale-text">Получить скидку на выступление</p>
-                </div>
-            </div>
-            <div class="about-us-photo">
-                <img src="images/quartet-aboutus.png" alt="Фото квартета" width="549" height="509">
 
-            </div>
-        </div>
-    </div>
-    <div class="quartet-bio">
-        <div class="quartet-bio-item">
-            <h4>Анастасия Кускашёва</h4>
-            <p>скрипка</p>
-            <p class="soloist-info">
-                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
-                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
-                работника культуры З.А. Беспаловой.
-            </p>
-        </div>
-        <div class="quartet-bio-item">
-            <h4>Анастасия Кускашёва</h4>
-            <p>скрипка</p>
-            <p class="soloist-info">
-                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
-                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
-                работника культуры З.А. Беспаловой.
-            </p>
-        </div>
-        <div class="quartet-bio-item">
-            <h4>Анастасия Кускашёва</h4>
-            <p>скрипка</p>
-            <p class="soloist-info">
-                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
-                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
-                работника культуры З.А. Беспаловой.
-            </p>
-        </div>
-        <div class="quartet-bio-item">
-            <h4>Анастасия Кускашёва</h4>
-            <p>скрипка</p>
-            <p class="soloist-info">
-                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
-                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
-                работника культуры З.А. Беспаловой.
-            </p>
-        </div>
-    </div>
-    <div class="music-player-full">
-        <div class="music-player-item">
-            <img src="images//player/metel.jpeg" width="280" height="360">
-        </div>
-        <div class="music-player-item">
-            <img src="images//player/metel.jpeg" width="280" height="360">
-        </div>
-        <div class="music-player-item">
-            <img src="images//player/metel.jpeg" width="280" height="360">
-        </div>
-        <div class="music-player-item">
-            <ul class="music-player-list">
-                <li class="promo-music-item">киномузыка</li>
-                <li class="promo-music-item">джаз и каверы</li>
-                <li class="promo-music-item">салонный стиль</li>
-                <li class="promo-music-item"><span style="color: #fff;">классика</span></li>
-                <li class="promo-music-item">новый год</li>
-                <li class="promo-music-item">любая музыка по<br> <span style="color: red;">вашему заказу</span></li>
-            </ul>
-        </div>
-    </div>
-    <div class="form-container">
-        <header>Get in touch with us today to see how we can help you<br> develop the right assets — faster.</header>
-        <form action="#">
-            <div class="form">
-                <div class="details">
-                    <span class="title">Choose One:*</span>
-                    <div class="form-change-btns">
-                        <button class="title-btn">Кнопка 1</button>
-                        <button class="title-btn">Кнопка 2</button>
-                        <button class="title-btn">Кнопка 3</button>
-                    </div>
-                </div>
-                <div class="form-field">
-                    <div class="fields-one active">
-                        <div class="input-field">
-                            <input type="text" placeholder="First name*" name="Name" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Last name*" name="Surname" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Company*" name="Company" required>
-                        </div>
-                        <div class="input-fields-small">
-                            <div class="input-field">
-                                <input type="email" placeholder="Email*" name="Email" required>
-                            </div>
-                            <div class="input-field">
-                                <input type="tel" data-tel-input placeholder="Phone*" name="Phone" id="phone-field"required>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
-                                placeholder="Комментарии к мероприятию" name="Comments"></textarea>
-                        </div>
-                    </div>
-                    <div class="fields-two">
-                        <div class="input-field">
-                            <input type="text" placeholder="kaka*" name="Name" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="pipi*" name="Surname" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="sisi*" name="Company" required>
-                        </div>
-                        <div class="input-fields-small">
-                            <div class="input-field">
-                                <input type="email" placeholder="momo*" name="Email" required>
-                            </div>
-                            <div class="input-field">
-                                <input type="tel" placeholder="bobo*" name="Phone" required>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <textarea name="comments" id="comment-field-two" rows="10" cols="55" class="text-area-field"
-                                placeholder="Комментарии к мероприятию" name="Comments"></textarea>
-                        </div>
-                    </div>
-                    <!-- <div class="fields-three">
-                        <div class="input-field">
-                            <input type="text" placeholder="First name*" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Last name*" required>
-                        </div>
-                        <div class="input-field">
-                            <input type="text" placeholder="Company*" required>
-                        </div>
-                        <div class="input-fields-small">
-                            <div class="input-field">
-                                <input type="email" placeholder="Email*" required>
-                            </div>
-                            <div class="input-field">
-                                <input type="tel" placeholder="Phone*" required>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
-                                placeholder="Комментарии к мероприятию"></textarea>
-                        </div>
-                    </div> -->
-                </div>
-                <div class="submit-btn">
-                    <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
-                </div>
-            </div>
-        </form>
-    </div>
-    <button class="up-button" type="button">
-        ↑
-        <span class="visually-hidden"></span>
-    </button>
-    <footer></footer>
-    <script src="data.js?v=1"></script>
-    <script src="script.js?v=1"></script>
-    <script src="phoneScript.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
