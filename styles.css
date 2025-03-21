@@ -5,13 +5,13 @@
 }
 
 .main-header {
-    padding: 34px 120px 12px;
-    width: 1680px;
-    height: 81px;
+    /* padding: 34px 120px 12px; */
+    width: 100vw;
+    /* height: 81px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 210px;
+    /* margin-bottom: 210px; */
 }
 
 .main-logo {
@@ -33,10 +33,12 @@
 }
 
 .navigation-item {
+    background: transparent !important;
     padding: 11.2px 16px;
 }
 
 .navigation-item a {
+    background: transparent;
     color: #c4c4c4;
     display: block;
     text-transform: uppercase;
@@ -52,8 +54,10 @@
 }
 
 .promo {
+    flex-wrap: wrap;
     margin: 0 auto;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-bottom: 200px;
 }
@@ -66,6 +70,7 @@
     color: #ffffff;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .promo-big-logo {
@@ -88,11 +93,12 @@
     content: '';
 }
 
-.promo-name.first-stroke {
+.promo-name.first-stroke{
     display: block;
     position: relative;
     margin-bottom: 23px;
-}
+    
+}  
 
 .promo-info-block {
     width: 240px;
@@ -123,7 +129,7 @@
     display: block;
     width: 210px;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration:none ;
     font-weight: 300;
     padding: 24px 48px;
     border: 1px solid #FFFFFF;
@@ -156,26 +162,29 @@
 .socials-and-button {
     padding: 0 120px;
     display: block;
-    width: 1680px;
-    display: flex;
+    /* width: 1680px; */
+    display:flex;
     justify-content: space-between;
 }
 
 .bottom-button {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #F7F7F7;
+   text-transform: uppercase; 
+   text-decoration: none;
+   color: #F7F7F7;
 }
 
 .socials-list {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap:15px;
     list-style: none;
     width: 400px;
+    
+
 }
 
-.socials-item a {
+.socials-item a{
+    
     text-decoration: none;
     color: #F7F7F7;
 }
