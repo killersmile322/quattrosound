@@ -66,16 +66,14 @@
     color: #ffffff;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .promo-big-logo {
     position: absolute;
     content: '';
     z-index: 0;
-    top:-20%;
-    left:0%;
-
+    top: -60px;
+    left: -20px;
 }
 
 .promo-name {
@@ -90,12 +88,11 @@
     content: '';
 }
 
-.promo-name.first-stroke{
+.promo-name.first-stroke {
     display: block;
     position: relative;
     margin-bottom: 23px;
-    
-}  
+}
 
 .promo-info-block {
     width: 240px;
@@ -126,7 +123,7 @@
     display: block;
     width: 210px;
     color: #ffffff;
-    text-decoration:none ;
+    text-decoration: none;
     font-weight: 300;
     padding: 24px 48px;
     border: 1px solid #FFFFFF;
@@ -160,28 +157,25 @@
     padding: 0 120px;
     display: block;
     width: 1680px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
 
 .bottom-button {
-   text-transform: uppercase; 
-   text-decoration: none;
-   color: #F7F7F7;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F7F7F7;
 }
 
 .socials-list {
     display: flex;
     justify-content: space-between;
-    gap:15px;
+    gap: 15px;
     list-style: none;
     width: 400px;
-    
-
 }
 
-.socials-item a{
-    
+.socials-item a {
     text-decoration: none;
     color: #F7F7F7;
 }
