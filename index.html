@@ -2,13 +2,14 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="styles.css?v=1">
+    <link rel="stylesheet" href="form.css?v=1">
 </head>
 
 <body>
@@ -46,7 +47,8 @@
         <br>
     </main>
     <div class="socials-and-button">
-        <a class="bottom-button" href="#" ><img src="images/down.png.svg" width=""></a> <!-- мб сделать чуть больше?? уж очень мелкая-->
+        <a class="bottom-button" href="#"><img src="images/down.png.svg" width=""></a>
+        <!-- мб сделать чуть больше?? уж очень мелкая-->
         <ul class="socials-list">
             <li class="socials-item"><a href="#">YouTube</a></li>
             <li class="socials-item"><a href="#">YouTube</a></li>
@@ -55,11 +57,105 @@
             <li class="socials-item"><a href="#">YouTube</a></li>
         </ul>
     </div>
-    <footer>
+    <div class="quartet-bio">
+        <div class="quartet-bio-item">
+            <h4>Анастасия Кускашёва</h4>
+            <p>скрипка</p>
+            <p class="soloist-info">
+                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
+                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
+                работника культуры З.А. Беспаловой.
+            </p>
+        </div>
+        <div class="quartet-bio-item">
+            <h4>Анастасия Кускашёва</h4>
+            <p>скрипка</p>
+            <p class="soloist-info">
+                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
+                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
+                работника культуры З.А. Беспаловой.
+            </p>
+        </div>
+        <div class="quartet-bio-item">
+            <h4>Анастасия Кускашёва</h4>
+            <p>скрипка</p>
+            <p class="soloist-info">
+                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
+                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
+                работника культуры З.А. Беспаловой.
+            </p>
+        </div>
+        <div class="quartet-bio-item">
+            <h4>Анастасия Кускашёва</h4>
+            <p>скрипка</p>
+            <p class="soloist-info">
+                Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
+                Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
+                работника культуры З.А. Беспаловой.
+            </p>
+        </div>
+    </div>
+    <div class="music-player-full">
+        <div class="music-player-item">
+            <img src="images//player/metel.jpeg" width="280" height="360">
+        </div>
+        <div class="music-player-item">
+            <img src="images//player/metel.jpeg" width="280" height="360">
+        </div>
+        <div class="music-player-item">
+            <img src="images//player/metel.jpeg" width="280" height="360">
+        </div>
+        <div class="music-player-item">
+            <ul class="music-player-list">
+                <li class="promo-music-item">киномузыка</li>
+                <li class="promo-music-item">джаз и каверы</li>
+                <li class="promo-music-item">салонный стиль</li>
+                <li class="promo-music-item"><span style="color: #fff;">классика</span></li>
+                <li class="promo-music-item">новый год</li>
+                <li class="promo-music-item">любая музыка по<br> <span style="color: red;">вашему заказу</span></li>
+            </ul>
+        </div>
+    </div>
+    <section id="contact-us-form">
+        <header>Связаться с нами</header>
+        <form action="#">
+            <div class="input-field">
+                <input type="text" placeholder="First name*" name="Name" required>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Last name*" name="Surname" required>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Company*" name="Company" required>
+            </div>
+            <div class="input-fields-small">
+                <div class="input-field">
+                    <input type="email" placeholder="Email*" name="Email" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="+7(999)888-77-66" id="phone-field" required>
+                </div>
+            </div>
+            <div class="input-field">
+                <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
+                    placeholder="Комментарии к мероприятию" name="Comments"></textarea>
+            </div>
 
 
-    </footer>
-    <script src="script.js"></script>
+            <div class="submit-btn">
+                <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
+            </div>
+
+        </form>
+    </section>
+    <button class="up-button" type="button">
+        ↑
+        <span class="visually-hidden"></span>
+    </button>
+    <footer></footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="phone.js?v=1"></script>
+    <script src="script.js?v=1"></script>
 </body>
 
 </html>
