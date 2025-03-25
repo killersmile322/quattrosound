@@ -1,23 +1,25 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+body {
     background-color: #161616;
 }
 
 .main-header {
-    /* padding: 34px 120px 12px; */
+    box-sizing: border-box;
+    padding: 24px 120px ;
     width: 100vw;
-    /* height: 81px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 210px; */
+    margin-bottom: 110px;
 }
 
 .main-logo {
     width: 142px;
     height: 35px;
-    /* display: block; */
 }
 
 .main-navigation {
@@ -70,7 +72,13 @@
     color: #ffffff;
     flex-direction: column;
     justify-content: space-between;
-    
+    background: transparent;
+}
+
+.promo-name-block {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .promo-big-logo {
@@ -81,6 +89,21 @@
     left: -20px;
 }
 
+.promo-name-one{
+    display: block;
+    position: relative;
+    z-index: 3;
+    position: absolute;
+    background: transparent;
+    width: max-content;
+    left: -110px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    top: -70px;   
+}
+
 .promo-name {
     display: block;
     position: absolute;
@@ -89,18 +112,19 @@
     font-style: normal;
     font-size: 128px;
     line-height: 60px;
-    letter-spacing: -4%;
+    letter-spacing: -3px;
     content: '';
+    background: transparent;
+    top: 68px;
+    left: 320px;
+    z-index: 3;
 }
 
-.promo-name.first-stroke{
-    display: block;
-    position: relative;
-    margin-bottom: 23px;
-    
-}  
+  
 
 .promo-info-block {
+    top: -70px;
+    position: relative;
     width: 240px;
     height: 76px;
     font-family: 'Inter', sans-serif;
@@ -108,7 +132,6 @@
 }
 
 .promo-info-block h4 {
-    /* display: inline-block; */
     position: relative;
     margin-bottom: 12px;
     text-transform: uppercase;
@@ -116,11 +139,16 @@
 }
 
 .promo-info-block p {
-    /* display: inline-block; */
     position: relative;
     margin-bottom: 44px;
     text-transform: uppercase;
     z-index: 2;
+    font-weight: 300;
+}
+
+.promo-info {
+    width: 240px;
+    height: 48px;
 }
 
 
@@ -160,11 +188,14 @@
 
 
 .socials-and-button {
+    position: relative;
+    top: 160px;
     padding: 0 120px;
     display: block;
-    /* width: 1680px; */
+    width: 100%;
     display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .bottom-button {
@@ -179,8 +210,7 @@
     gap:15px;
     list-style: none;
     width: 400px;
-    
-
+    font-size: 14px;
 }
 
 .socials-item a{
