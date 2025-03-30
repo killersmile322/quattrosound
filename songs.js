@@ -1,4 +1,4 @@
-export const songs = [
+ const songs = [
     {
         name: 'Скелетики',
         path: 'music/Andrew Gold - Spooky scary skeletons (mlg edit)2.mp3',
