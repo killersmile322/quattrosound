@@ -1,0 +1,132 @@
+@import 'main-header.css';
+@import 'promo.css';
+@import 'video-table.css';
+@import 'quartet-bio.css';
+@import 'advantages.css';
+@import 'music-player.css';
+@import 'dialog.css';
+@import 'attitude.css';
+@import 'form.css';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: #f7f7f7;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #161616;
+}
+
+/* запрещаем скролл когда модалка открыта */
+body:has(dialog[open]) {
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+section {
+    padding: 0 120px;
+}
+
+a {
+    cursor: pointer;
+    color: #c4c4c4;
+}
+
+a:hover {
+    color: white;
+}
+
+h2 {
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button.action-button {
+    padding: 11px 16px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 20px;
+    transition: border 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+button.action-button:hover {
+    border: 1px solid #EE5533;
+    color: #EE5533;
+}
+
+
+/* UP-BUTTON */
+
+.up-button {
+    width: 150px;
+    height: 150px;
+}
+
+/* FOOTER */
+
+.main-footer {
+    padding: 80px 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 170px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info-text {
+    font-size: 42px;
+    font-family: 'Inter', sans-serif;
+    line-height: 51px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-info-text span {
+    font-size: 40px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.footer-info .all-rights {
+    margin-top: auto;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-logo {
+    margin: auto;
+    margin-bottom: 90px;
+}

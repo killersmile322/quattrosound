@@ -8,8 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css?v=1">
-    <link rel="stylesheet" href="form.css?v=1">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
@@ -17,360 +16,439 @@
         <div class="main-logo">
             <image src="images/main-logo.svg"></image>
         </div>
-        <div class="main-navigation">
+        <menu>
             <ul class="navigation-list">
-                <li class="navigation-item"><a href="">О нас</a></li>
-                <li class="navigation-item"><a href="">Услуги</a></li>
-                <li class="navigation-item"><a href="">Клиенты</a></li>
-                <li class="navigation-item" id="to-buy"><a href="">Бронь</a></li>
+                <li class="navigation-item"><a href="#about-us">О нас</a></li>
+                <li class="navigation-item"><a href="#attitude">Наш подход</a></li>
+                <li class="navigation-item"><a href="#clients">Клиенты</a></li>
+                <li class="navigation-item">
+                    <a href="#contact-us-form-section">
+                        <button class="action-button">
+                            Бронь
+                        </button>
+                    </a>
+                </li>
             </ul>
-        </div>
+        </menu>
     </header>
-    <main class="promo">
-        <div class="promo-block">
-            <div class="promo-name-block">
-                <img src="images/logo-big-background.svg" width="568" height="665" alt="promo-logo"
-                    class="promo-big-logo">
-                <h1 class="promo-name-one">Утонченная Живая</h1>
-                <h1 class="promo-name">Музыка</h1>
-            </div>
-            <div class="promo-info-block">
-                <h4>quattrosound</h4>
-                <p class="promo-info">Очаруйте своё мероприятие живой струнной музыкой</p>
-                <a href="#" class="to-order">Заказать выступление</a>
-            </div>
-        </div>
-        <div class="promo-photo-player">
-            <img class="promo-main-photo" src="images/soloists-photos/promo-photo-main.png" width="562" height="518">
-            <img class="promo-photo-one" src="images/soloists-photos/promo-photo-1.png" width="562" height="518">
-        </div>
-        <div class="socials-and-button">
-            <a class="bottom-button" href="#"><img src="images/down.png.svg"></a>
-            <!-- мб сделать чуть больше?? уж очень мелкая-->
-            <ul class="socials-list">
-                <li class="socials-item"><a href="#">YouTube</a></li>
-                <li class="socials-item"><a href="#">Instagram</a></li>
-                <li class="socials-item"><a href="#">Facebook</a></li>
-                <li class="socials-item"><a href="#">Telegram</a></li>
-                <li class="socials-item"><a href="#">VK</a></li>
-            </ul>
-        </div>
-    </main>
-    <div class="video-table">
-        <div class="video-table-item">
-            <img src="images/music-player-full/Beethoven.jpg" width="280" height="360">
-            <div class="track-info">
-                <p class="track-name">ARGY — NEW WORLD</p>
-                <p class="track-artist">  /   Animations </p>
-            </div>
-        </div>
-        <div class="video-table-item">
-            <img src="images/music-player-full/Raxmaninov.jpg" width="280" height="360">
-            <div class="track-info">
-                <p class="track-name">ARGY — NEW WORLD</p>
-                <p class="track-artist">  /   Animations </p>
-            </div>
-        </div>
-        <div class="video-table-item">
-            <img src="images/music-player-full/chaik.jpg" width="280" height="360">
-            <div class="track-info">
-                <p class="track-name">ARGY — NEW WORLD</p>
-                <p class="track-artist">  /   Animations </p>
-            </div>
-        </div>
-        <div class="video-table-item">
-            <img src="images/music-player-full/Beethoven.jpg" width="280" height="360">
-            <div class="track-info">
-                <p class="track-name">ARGY — NEW WORLD</p>
-                <p class="track-artist">  /   Animations </p>
-            </div>
-        </div>
-        <div class="video-table-item">
-            <img src="images/music-player-full/Raxmaninov.jpg" width="280" height="360">
-            <div class="track-info">
-                <p class="track-name">ARGY — NEW WORLD</p>
-                <p class="track-artist">  /   Animations </p>
-            </div>
-        </div>
-        <div class="video-table-item">
-            <img src="images/music-player-full/chaik.jpg" width="280" height="360">
-            <div class="track-info">
-                <p class="track-name">ARGY — NEW WORLD</p>
-                <p class="track-artist">  /   Animations </p>
-            </div>
-        </div>
-    </div>
-    <div class="quartet-bio">
-        <div class="bio-title">
-            <h2>О нас</h2>
-            <p>Струнный квартет «Quattrosound» сложился в 2011г. В его составе — музыканты с высшим музыкальным
-                образованием, лауреаты различных конкурсов.</p>
-        </div>
-        <div class="quartet-bio-table">
-            <!-- Посмотреть расстояния при разных разрешениях. ВозможноЮ стоить изменить 'space-between' -->
-            <div class="quartet-bio-item">
-                <div class="soloist-photo">
-                    <img src="images/soloists-photos/kuskasheva.png" width="120" height="120" alt="soloist-photo">
+    <main>
+        <section class="promo">
+            <div class="promo-block">
+                <div class="promo-name-block">
+                    <img src="images/logo-big-background.svg" width="568" height="665" alt="promo-logo"
+                        class="promo-big-logo">
+                    <h1 class="promo-name-one">Утонченная Живая</h1>
+                    <h1 class="promo-name">Музыка</h1>
                 </div>
-                <div class="soloist-name">
-                    <h4>Анастасия Кускашёва</h4>
-                    <p>скрипка</p>
-                </div>
-                <div class="soloist-info">
-                    <p>
-                        Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
-                        Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
-                        работника культуры З.А. Беспаловой.
-                    </p>
+                <div class="promo-info-block">
+                    <h4>quattrosound</h4>
+                    <p class="promo-info">Очаруйте своё мероприятие живой струнной музыкой</p>
+                    <a href="#" class="to-order">Заказать выступление</a>
                 </div>
             </div>
-            <div class="quartet-bio-item">
-                <div class="soloist-photo">
-                    <img src="images/soloists-photos/bezotosnaya.png" width="120" height="120" alt="soloist-photo">
-                </div>
-                <div class="soloist-name">
-                    <h4>Светлана Безотосная</h4>
-                    <p>скрипка</p>
-                </div>
-                <div class="soloist-info">
-                    <p>
-                        Родилась 22 ноября 1987 году в городе Владимире. Выпускница Государственного
-                        музыкально-педагогического института имени М.М.Ипполитова-Иванова (2012, класс заслуженного
-                        деятеля искусств России, профессора – Валерия Вороны).
-                    </p>
-                </div>
+            <div class="promo-photo-player">
+                <img class="promo-main-photo" src="images/soloists-photos/promo-photo-main.png" width="562"
+                    height="518">
+                <img class="promo-photo-one" src="images/soloists-photos/promo-photo-1.png" width="562" height="518">
             </div>
-            <div class="quartet-bio-item">
-                <div class="soloist-photo">
-                    <img src="images/soloists-photos/lukyashina.png" width="120" height="120" alt="soloist-photo">
-                </div>
-                <div class="soloist-name">
-                    <h4>Мария Лукьяшина</h4>
-                    <p>альт</p>
-                </div>
-                <div class="soloist-info">
-                    <p>
-                        Родилась 9 июля 1987 года в городе Москва. Занималась музыкой с 4х лет, в 6 лет пошла в
-                        музыкальную школу, которую закончила в 2001 году по классу скрипки у педагога Артамоновой Е. В.
-                        Поступила в ГМК им. Гнесиных, который закончила с отличием в 2005 году по классу альта у
-                        заслуженного учителя РФ Стоклицкой Е. Ю.
-                    </p>
-                </div>
+            <div class="socials-and-button">
+                <a class="bottom-button" href="#"><img src="images/down.png.svg"></a>
+                <!-- мб сделать чуть больше?? уж очень мелкая-->
+                <ul class="socials-list">
+                    <li class="socials-item"><a href="#">YouTube</a></li>
+                    <li class="socials-item"><a href="#">Instagram</a></li>
+                    <li class="socials-item"><a href="#">Facebook</a></li>
+                    <li class="socials-item"><a href="#">Telegram</a></li>
+                    <li class="socials-item"><a href="#">VK</a></li>
+                </ul>
             </div>
-            <div class="quartet-bio-item">
-                <div class="soloist-photo">
-                    <img src="images/soloists-photos/zvonnikova.png" width="120" height="120" alt="soloist-photo">
-                </div>
-                <div class="soloist-name">
-                    <h4>Анна Звонникова</h4>
-                    <p>виолончель</p>
-                </div>
-                <div class="soloist-info">
-                    <p>
-                        Родилась 7 февраля 1982 года в городе Брянск. С 7 лет начала обучаться игре на виолончели у
-                        преподавателя Коротковой Н.В. Принимала активное участие в различных концертах, а также в
-                        конкурсах, где неоднократно становилась лауреатом и дипломантом.
-                    </p>
-                </div>
-            </div>
-        </div>
+        </section>
 
-    </div>
-    <div class="advantages">
-        <div class="advantages-item">
-            <div class="adv-item-left-side">
-                <p class="number">(1/4)</p>
-                <p class="adv-name">ВЫСТУПЛЕНИЯ НА РАЗНЫХ ПЛОЩАДКАХ</p>
+        <section class="video-table">
+            <div class="video-table-item">
+                <img src="images/music-player-full/Beethoven.jpg">
+                <div class="track-info">
+                    <p class="track-name">ARGY — NEW WORLD</p>
+                    <p class="track-artist">  /   Animations </p>
+                </div>
             </div>
-            <!-- justify-content: space-between; Посмотреть в разных разрешениях. 
+            <div class="video-table-item">
+                <img src="images/music-player-full/Raxmaninov.jpg">
+                <div class="track-info">
+                    <p class="track-name">ARGY — NEW WORLD</p>
+                    <p class="track-artist">  /   Animations </p>
+                </div>
+            </div>
+            <div class="video-table-item">
+                <img src="images/music-player-full/chaik.jpg">
+                <div class="track-info">
+                    <p class="track-name">ARGY — NEW WORLD</p>
+                    <p class="track-artist">  /   Animations </p>
+                </div>
+            </div>
+            <div class="video-table-item">
+                <img src="images/music-player-full/Beethoven.jpg">
+                <div class="track-info">
+                    <p class="track-name">ARGY — NEW WORLD</p>
+                    <p class="track-artist">  /   Animations </p>
+                </div>
+            </div>
+            <div class="video-table-item">
+                <img src="images/music-player-full/Raxmaninov.jpg">
+                <div class="track-info">
+                    <p class="track-name">ARGY — NEW WORLD</p>
+                    <p class="track-artist">  /   Animations </p>
+                </div>
+            </div>
+            <div class="video-table-item">
+                <img src="images/music-player-full/chaik.jpg">
+                <div class="track-info">
+                    <p class="track-name">ARGY — NEW WORLD</p>
+                    <p class="track-artist">  /   Animations </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="quartet-bio">
+            <div class="bio-title">
+                <h2>О нас</h2>
+                <p>Струнный квартет «Quattrosound» сложился в 2011г. В его составе — музыканты с высшим музыкальным
+                    образованием, лауреаты различных конкурсов.</p>
+            </div>
+            <div class="quartet-bio-table">
+                <!-- Посмотреть расстояния при разных разрешениях. ВозможноЮ стоить изменить 'space-between' -->
+                <div class="quartet-bio-item">
+                    <div class="soloist-photo">
+                        <img src="images/soloists-photos/kuskasheva.png" width="120" height="120" alt="soloist-photo">
+                    </div>
+                    <div class="soloist-name">
+                        <h4>Анастасия Кускашёва</h4>
+                        <p>скрипка</p>
+                    </div>
+                    <div class="soloist-info">
+                        <p>
+                            Родилась 28 октября 1984 года в городе Артеме Приморского края, в семье музыкантов.
+                            Поступила в 1992 в музыкальную школу им. С.С. Прокофьева (Владивосток) в класс Заслуженного
+                            работника культуры З.А. Беспаловой.
+                        </p>
+                    </div>
+                </div>
+                <div class="quartet-bio-item">
+                    <div class="soloist-photo">
+                        <img src="images/soloists-photos/bezotosnaya.png" width="120" height="120" alt="soloist-photo">
+                    </div>
+                    <div class="soloist-name">
+                        <h4>Светлана Безотосная</h4>
+                        <p>скрипка</p>
+                    </div>
+                    <div class="soloist-info">
+                        <p>
+                            Родилась 22 ноября 1987 году в городе Владимире. Выпускница Государственного
+                            музыкально-педагогического института имени М.М.Ипполитова-Иванова (2012, класс заслуженного
+                            деятеля искусств России, профессора – Валерия Вороны).
+                        </p>
+                    </div>
+                </div>
+                <div class="quartet-bio-item">
+                    <div class="soloist-photo">
+                        <img src="images/soloists-photos/lukyashina.png" width="120" height="120" alt="soloist-photo">
+                    </div>
+                    <div class="soloist-name">
+                        <h4>Мария Лукьяшина</h4>
+                        <p>альт</p>
+                    </div>
+                    <div class="soloist-info">
+                        <p>
+                            Родилась 9 июля 1987 года в городе Москва. Занималась музыкой с 4х лет, в 6 лет пошла в
+                            музыкальную школу, которую закончила в 2001 году по классу скрипки у педагога Артамоновой Е.
+                            В.
+                            Поступила в ГМК им. Гнесиных, который закончила с отличием в 2005 году по классу альта у
+                            заслуженного учителя РФ Стоклицкой Е. Ю.
+                        </p>
+                    </div>
+                </div>
+                <div class="quartet-bio-item">
+                    <div class="soloist-photo">
+                        <img src="images/soloists-photos/zvonnikova.png" width="120" height="120" alt="soloist-photo">
+                    </div>
+                    <div class="soloist-name">
+                        <h4>Анна Звонникова</h4>
+                        <p>виолончель</p>
+                    </div>
+                    <div class="soloist-info">
+                        <p>
+                            Родилась 7 февраля 1982 года в городе Брянск. С 7 лет начала обучаться игре на виолончели у
+                            преподавателя Коротковой Н.В. Принимала активное участие в различных концертах, а также в
+                            конкурсах, где неоднократно становилась лауреатом и дипломантом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="advantages">
+            <div class="advantages-item">
+                <div class="adv-item-left-side">
+                    <p class="number">(1/4)</p>
+                    <p class="adv-name">ВЫСТУПЛЕНИЯ НА РАЗНЫХ ПЛОЩАДКАХ</p>
+                </div>
+                <!-- justify-content: space-between; Посмотреть в разных разрешениях. 
              при больших - очень большое расстояние
              можно поставить 'space-evenly' -->
-            <div class="adv-item-right-side">
-                <p class="adv-description"> <span>За время своего существования квартет накопил большой опыт выступлений
-                        на
-                        множестве музыкальных площадок, в том числе в сотрудничестве с такими музыкантами,
-                        как</span><br>
-                    Дмитрий Маликов,<br> группа «Несчастный случай» и «Квартет И»,<br> Игорь Демарин (рок-опера
-                    «Парфюмер»),<br>
-                    Баста,<br>
-                    Zivert,<br> МакSим,<br> Елка,<br> Ирина Круг,<br> Ирина Богушевская. </p>
+                <div class="adv-item-right-side">
+                    <p class="adv-description"> <span>За время своего существования квартет накопил большой опыт
+                            выступлений
+                            на
+                            множестве музыкальных площадок, в том числе в сотрудничестве с такими музыкантами,
+                            как</span><br>
+                        Дмитрий Маликов,<br> группа «Несчастный случай» и «Квартет И»,<br> Игорь Демарин (рок-опера
+                        «Парфюмер»),<br>
+                        Баста,<br>
+                        Zivert,<br> МакSим,<br> Елка,<br> Ирина Круг,<br> Ирина Богушевская. </p>
+                </div>
             </div>
-        </div>
-        <div class="advantages-item">
-            <div class="adv-item-left-side">
-                <p class="number">(2/4)</p>
-                <p class="adv-name">СОТРУДНИЧЕСТВО НА ВЫСШЕМ УРОВНЕ </p>
+            <div class="advantages-item">
+                <div class="adv-item-left-side">
+                    <p class="number">(2/4)</p>
+                    <p class="adv-name">СОТРУДНИЧЕСТВО НА ВЫСШЕМ УРОВНЕ </p>
+                </div>
+                <div class="adv-item-right-side">
+                    <p class="adv-description"> <span>
+                            В составе разных коллективов и оркестров<br> квартет также выступал с</span><br>Геннадием
+                        Рождественским,<br> Владимиром Спиваковым,<br> Юрием Темиркановым,<br> Владимиром Юровским,<br>
+                        Юрием Башметом,<br>
+                        Михаилом Плетневым,<br> Александром Рудиным,<br> Элисо Вирсаладзе,<br> Натальей Гутман, </p>
+                    <p class="adv-description"><span>А также принимал участие в концертах</span><br> Гарика Сукачева с
+                        группой «Неприкасаемые»,<br>
+                        Тамары Гвердцители,<br>
+                        Пласидо Доминго,<br> Эннио Морриконе,<br> Игоря Крутого,<br> Лары Фабиан,<br> группы
+                        «Скорпионс»,<br> Евы Польны,<br> Jah
+                        Khalib,<br> Apocalyptica. </p>
+                </div>
             </div>
-            <div class="adv-item-right-side">
-                <p class="adv-description"> <span>
-                        В составе разных коллективов и оркестров<br> квартет также выступал с</span><br>Геннадием
-                    Рождественским,<br> Владимиром Спиваковым,<br> Юрием Темиркановым,<br> Владимиром Юровским,<br>
-                    Юрием Башметом,<br>
-                    Михаилом Плетневым,<br> Александром Рудиным,<br> Элисо Вирсаладзе,<br> Натальей Гутман, </p>
-                <p class="adv-description"><span>А также принимал участие в концертах</span><br> Гарика Сукачева с
-                    группой «Неприкасаемые»,<br>
-                    Тамары Гвердцители,<br>
-                    Пласидо Доминго,<br> Эннио Морриконе,<br> Игоря Крутого,<br> Лары Фабиан,<br> группы
-                    «Скорпионс»,<br> Евы Польны,<br> Jah
-                    Khalib,<br> Apocalyptica. </p>
+            <div class="advantages-item">
+                <div class="adv-item-left-side">
+                    <p class="number">(3/4)</p>
+                    <p class="adv-name">ПОСТОЯННЫЙ ПОИСК СОВЕРШЕНСТВА</p>
+                </div>
+                <div class="adv-item-right-side">
+                    <p class="adv-description"><span>И этот список можно продолжать.<br>
+                            В настоящее время квартет ведет активную творческую деятельность,<br> продолжая делать
+                            аудиозаписи,
+                            выступать на классической сцене и в<br> эстрадных проектах.</span> </p>
+                </div>
             </div>
-        </div>
-        <div class="advantages-item">
-            <div class="adv-item-left-side">
-                <p class="number">(3/4)</p>
-                <p class="adv-name">ПОСТОЯННЫЙ ПОИСК СОВЕРШЕНСТВА</p>
+            <div class="advantages-item">
+                <div class="adv-item-left-side">
+                    <p class="number">(4/4)</p>
+                    <p class="adv-name">БОГАТЫЙ РЕПЕРТУАР НА ЛЮБОЙ ВКУС</p>
+                </div>
+                <div class="adv-item-right-side">
+                    <p class="adv-description"> <span>В сольном репертуаре квартета музыка различных эпох, от
+                            традиционной
+                            классики и романтики до современных и популярных произведений, джазовые пьесы, музыка из
+                            кинофильмов, детские произведения. Также возможно сделать и исполнить эксклюзивную
+                            аранжировку
+                            для
+                            струнного квартета практически любого произведения, которое захотят услышать
+                            слушатели.</span>
+                    </p>
+                </div>
             </div>
-            <div class="adv-item-right-side">
-                <p class="adv-description"><span>И этот список можно продолжать.<br>
-                        В настоящее время квартет ведет активную творческую деятельность,<br> продолжая делать
-                        аудиозаписи,
-                        выступать на классической сцене и в<br> эстрадных проектах.</span> </p>
-            </div>
-        </div>
-        <div class="advantages-item">
-            <div class="adv-item-left-side">
-                <p class="number">(4/4)</p>
-                <p class="adv-name">БОГАТЫЙ РЕПЕРТУАР НА ЛЮБОЙ ВКУС</p>
-            </div>
-            <div class="adv-item-right-side">
-                <p class="adv-description"> <span>В сольном репертуаре квартета музыка различных эпох, от традиционной
-                        классики и романтики до современных и популярных произведений, джазовые пьесы, музыка из
-                        кинофильмов, детские произведения. Также возможно сделать и исполнить эксклюзивную аранжировку
-                        для
-                        струнного квартета практически любого произведения, которое захотят услышать слушатели.</span>
-                </p>
-            </div>
-        </div>
 
-    </div>
-    <div class="music-player">
-        <div class="audio-player">
-            <audio src="" id="audio"></audio>
-            <div class="promo-player">
-                <h3 class="song-name">
-                    Pesnya
-                </h3>
-                <p class="artist-name">
-                    Valera
-                </p>
-                <div class="music-background">
+        </section>
+
+        <section class="our-music">
+            <h3>Наш репертуар</h3>
+            <div class="music-player">
+                <div class="audio-player">
+                    <audio src="" id="audio"></audio>
+                    <div class="promo-player">
+                        <h4 class="song-name">
+                            Pesnya
+                        </h4>
+                        <p class="artist-name">
+                            Valera
+                        </p>
+                        <div class="music-background">
+                        </div>
+                        <div class="song-slider">
+                            <input type="range" value="0" class="seek-bar">
+                            <!-- <span class="current-time">00:00</span> Не нужно, тк они будут короткие
+                            <span class="song-duretioin">00:00</span> -->
+                        </div>
+                        <div class="controls">
+                            <button class="btn back-btn">
+                                <image src="images/player/pre.png">
+                            </button>
+                            <button class="play-btn pause">
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <button class="btn forward-btn">
+                                <image src="images/player/nxt.png">
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="song-slider">
-                    <input type="range" value="0" class="seek-bar">
-                    <!-- <span class="current-time">00:00</span> Не нужно, тк они будут короткие
-                        <span class="song-duretioin">00:00</span> -->
+            </div>
+            <button class="action-button" id="dialog_show">Посмотреть все</button>
+            <dialog>
+                <h3>Посмотреть готовые тематические программы:</h3>
+
+                <div class="select-genre">
+                    <caption>Выберите жанр</caption>
+                    <ul>
+                        <li>Джаз каверы</li>
+                        <li>Киномузыка</li>
+                        <li>Салонный стиль</li>
+                        <li>Классика</li>
+                        <li>Новый год</li>
+                    </ul>
                 </div>
-                <div class="controls">
-                    <button class="btn back-btn">
-                        <image src="images/player/pre.png">
+
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div>song</div>
+                <div class="footer">
+                    <span>
+                        А также мы играем <span class="highlight">любую музыку</span> по Вашему заказу
+                    </span>
+                    <button class="action-button" id="dialog_close">
+                        Понятно!
                     </button>
-                    <button class="play-btn pause">
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn forward-btn">
-                        <image src="images/player/nxt.png">
-                    </button>
+                </div>
+            </dialog>
+        </section>
+
+        <section id="attitude" class="attitude">
+            <div class="attitude-title">
+                <h2>Давайте творить</h2>
+                <p>Наш подход - создание атмосферы погружения и путешествия в удивительный мир музыки <br>Произведения
+                    подобранные специально для вашего мероприятия подарят бесконечный <br> спектр эмоций и позволят
+                    прожить
+                    его
+                    всем сердцем</p>
+            </div>
+            <div class="attitude-items">
+                <div class="attitude-item">
+                    <img class="attitude-number" src="images/attitude/1-3.svg" alt="attitude-number">
+                    <div class="attitude-item-description">
+                        <h4 class="attitude-item-title">Insight</h4>
+                        <p class="att-mini-title">/Uncover the Vision</p>
+                        <p class="att-descript">At Project BANG Agency, it all begins with deep insight. We don’t just
+                            scratch the surface—we dig into the essence of your brand, uncovering what makes you truly
+                            unique.</p>
+                        <p class="att-descript">Our approach is both analytical and intuitive, allowing us to extract
+                            key
+                            insights that will drive the creative process forward. We understand that each brand has its
+                            own
+                            pulse, and by aligning with that energy, we unlock its full potential. This is where your
+                            vision
+                            begins to take shape.</p>
+                    </div>
+
+                </div>
+                <div class="attitude-item">
+
+                    <img class="attitude-number" src="images/attitude/2-3.svg" alt="attitude-number">
+                    <div class="attitude-item-description">
+                        <h4 class="attitude-item-title">Craft</h4>
+                        <p class="att-mini-title">/Shape the Experience</p>
+                        <p class="att-descript">With insight in hand, we craft something extraordinary. Design is not
+                            just
+                            about aesthetics; it’s about creating experiences that speak to your audience on a deeper
+                            level.
+                            Our team is relentless in its pursuit of excellence, pushing boundaries to deliver
+                            cutting-edge
+                            visuals, campaigns, and identities that set you apart from the competition.</p>
+                        <p class="att-descript">We shape not only your brand’s look but its entire experience—creating
+                            work
+                            that resonates and inspires across every touchpoint. Precision and creativity define this
+                            stage
+                            of the process.</p>
+                    </div>
+
+                </div>
+                <div class="attitude-item">
+
+                    <img class="attitude-number" src="images/attitude/3-3.svg" alt="attitude-number">
+                    <div class="attitude-item-description">
+                        <h4 class="attitude-item-title">Elevate</h4>
+                        <p class="att-mini-title">/Ignite the Impact</p>
+                        <p class="att-descript">Once the vision is crafted, we elevate it into something that cannot be
+                            ignored. Through innovative strategies, we ignite your brand’s impact in ways that captivate
+                            and
+                            engage.</p>
+                        <p class="att-descript">We don’t settle for merely making a statement; we drive movements,
+                            pushing
+                            your presence to new heights across platforms and audiences. Our campaigns are designed to
+                            amplify your voice, ignite excitement, and leave an enduring mark in the house and techno
+                            music
+                            world. This is where your brand’s full power is unleashed.</p>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="attitude">
-        <div class="attitude-title">
-            <h2>Давайте творить</h2>
-            <p>Наш подход - создание атмосферы погружения и путешествия в удивительный мир музыки <br>Произведения
-                подобранные специально для вашего мероприятия подарят бесконечный <br> спектр эмоций и позволят прожить
-                его
-                всем сердцем</p>
-        </div>
-        <div class="attitude-items">
-            <div class="attitude-item">
-                <img class="attitude-number" src="images/attitude/1-3.svg" alt="attitude-number">
-                <div class="attitude-item-description">
-                    <h3 class="attitude-item-title">Insight</h3>
-                    <p class="att-mini-title">/Uncover the Vision</p>
-                    <p class="att-descript">At Project BANG Agency, it all begins with deep insight. We don’t just
-                        scratch the surface—we dig into the essence of your brand, uncovering what makes you truly
-                        unique.</p>
-                    <p class="att-descript">Our approach is both analytical and intuitive, allowing us to extract key
-                        insights that will drive the creative process forward. We understand that each brand has its own
-                        pulse, and by aligning with that energy, we unlock its full potential. This is where your vision
-                        begins to take shape.</p>
-                </div>
+        </section>
 
-            </div>
-            <div class="attitude-item">
+        <section id="clients">
+            <h3>Клиенты</h3>
+        </section>
 
-                <img class="attitude-number" src="images/attitude/2-3.svg" alt="attitude-number">
-                <div class="attitude-item-description">
-                    <h3 class="attitude-item-title">Craft</h3>
-                    <p class="att-mini-title">/Shape the Experience</p>
-                    <p class="att-descript">With insight in hand, we craft something extraordinary. Design is not just
-                        about aesthetics; it’s about creating experiences that speak to your audience on a deeper level.
-                        Our team is relentless in its pursuit of excellence, pushing boundaries to deliver cutting-edge
-                        visuals, campaigns, and identities that set you apart from the competition.</p>
-                    <p class="att-descript">We shape not only your brand’s look but its entire experience—creating work
-                        that resonates and inspires across every touchpoint. Precision and creativity define this stage
-                        of the process.</p>
-                </div>
-
-            </div>
-            <div class="attitude-item">
-
-                <img class="attitude-number" src="images/attitude/3-3.svg" alt="attitude-number">
-                <div class="attitude-item-description">
-                    <h3 class="attitude-item-title">Elevate</h3>
-                    <p class="att-mini-title">/Ignite the Impact</p>
-                    <p class="att-descript">Once the vision is crafted, we elevate it into something that cannot be
-                        ignored. Through innovative strategies, we ignite your brand’s impact in ways that captivate and
-                        engage.</p>
-                    <p class="att-descript">We don’t settle for merely making a statement; we drive movements, pushing
-                        your presence to new heights across platforms and audiences. Our campaigns are designed to
-                        amplify your voice, ignite excitement, and leave an enduring mark in the house and techno music
-                        world. This is where your brand’s full power is unleashed.</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <section id="contact-us-form">
-        <!-- Решить по поводу полей у формы. Названия и placeholderы -->
-        <header>Связаться с нами</header>
-        <form action="#" class="form-table">
-            <div class="input-field">
-                <input type="text" placeholder="Имя*" name="Name" required>
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Телефон*" name="Surname" required>
-            </div>
-            <div class="input-field">
-                <input type="text" placeholder="Мероприятие*" name="Company" required>
-            </div>
-            <div class="input-fields-small">
+        <section id="contact-us-form-section">
+            <!-- Решить по поводу полей у формы. Названия и placeholderы -->
+            <header>Связаться с нами</header>
+            <div id="contact-us-form-modal"></div>
+            <form class="form-table" id="contact-us-form">
                 <div class="input-field">
-                    <input type="email" placeholder="Email*" name="Email" required>
+                    <input type="text" placeholder="Имя*" id="firstName" name="Name" required>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="+7(999)888-77-66" id="phone-field" required>
+                    <input type="text" placeholder="Фамилия*" id="lastName" name="LastName" required>
                 </div>
-            </div>
-            <div class="input-field">
-                <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
-                    placeholder="Комментарии к мероприятию" name="Comments"></textarea>
-            </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Мероприятие*" name="Company" required>
+                </div>
+                <div class="input-fields-small">
+                    <div class="input-field">
+                        <input type="email" placeholder="Email*" name="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="+7(999)888-77-66" id="phone-field" required>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <textarea name="comments" id="comment-field" rows="10" cols="55" class="text-area-field"
+                        placeholder="Комментарии к мероприятию" name="Comments"></textarea>
+                </div>
 
 
-            <div class="submit-btn">
-                <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
-            </div>
+                <div class="submit-btn">
+                    <input type="submit" name="submit-btn" id="submit-btn" value="Отправить">
+                </div>
 
-        </form>
-    </section>
-    <button class="up-button" type="button">
-        <!-- Решить размеры и дизайн кнопки -->
-        ↑
-        <span class="visually-hidden"></span>
-    </button>
+            </form>
+        </section>
+
+        <button class="up-button" type="button">
+            <!-- Решить размеры и дизайн кнопки -->
+            ↑
+            <span class="visually-hidden"></span>
+        </button>
+    </main>
     <footer>
         <div class="main-footer">
             <div class="footer-info">
@@ -385,9 +463,11 @@
             </div>
         </div>
     </footer>
-    <script src="songs.js"></script>
+    <script src="scripts/songs.js"></script>
+    <script src="scripts/telegram.js"></script>
+    <script src="scripts/dialog.js"></script>
     <script src="https://unpkg.com/imask"></script>
-    <script src="script.js?v=1"></script>
+    <script src="scripts/index.js?v=1"></script>
 </body>
 
 </html>
