@@ -1,0 +1,44 @@
+/* MUSIC PLAYER FULL */
+
+.video-table {
+    padding: 0 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-table-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    flex: 1 1 280px !important;
+    max-width: 440px;
+    width: unset !important;
+}
+
+.video-table-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 440px;
+}
+
+.video-table p {
+    font-family: 'Inter', sans-serif;
+}
+
+.track-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.track-artist {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 15px;
+}

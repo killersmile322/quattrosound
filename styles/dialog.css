@@ -1,0 +1,92 @@
+dialog {
+    box-sizing: border-box;
+    border: none;
+    padding: 64px 48px;
+    margin: auto;
+    max-width: 80%;
+    max-height: 90%;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background-color: #161616;
+    color: #f7f7f7;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+dialog::-webkit-scrollbar {
+    display: none;
+}
+
+dialog[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.95);
+}
+
+dialog h3 {
+    text-align: start;
+}
+
+dialog .select-genre {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+dialog caption {
+    text-transform: uppercase;
+}
+
+dialog ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+dialog li {
+    padding: 9px 46px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: border 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+dialog li:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+dialog li[data-open='true'] {
+    border: 1px solid #EE5533;
+    color: #EE5533;
+}
+
+dialog .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+dialog .footer span {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+dialog .highlight {
+    color: #EE5533;
+}
