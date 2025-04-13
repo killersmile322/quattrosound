@@ -1,3 +1,49 @@
+const allSongs = [
+    {
+        categoryName: "Джаз каверы",
+        songs: [
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+        ],
+    },
+    {
+        categoryName: "Киномузыка",
+        songs: [
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+        ],
+    },
+    {
+        categoryName: "Салонный стиль",
+        songs: [
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+        ],
+    },
+    {
+        categoryName: "Классика",
+        songs: [
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+            { title: "Название песни", author: "Автор(ы)" },
+        ],
+    },
+    {
+        categoryName: "Новый год",
+        songs: [{ title: "Название песни", author: "Автор(ы)" }],
+    },
+];
+
 const dialog = document.querySelector("dialog");
 const showButton = document.getElementById("dialog_show");
 const closeButton = document.getElementById("dialog_close");
@@ -24,3 +70,12 @@ showButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
     dialog.close();
 });
+
+const handleClickCategory = (element) => {
+    const categories = dialog.querySelectorAll("li");
+    categories.forEach((category) => {
+        category.dataset.open = false;
+    });
+    element.dataset.open = true;
+    console.log(allSongs[element.dataset.id])
+};

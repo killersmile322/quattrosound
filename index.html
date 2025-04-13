@@ -300,28 +300,26 @@
                 <div class="select-genre">
                     <caption>Выберите жанр</caption>
                     <ul>
-                        <li>Джаз каверы</li>
-                        <li>Киномузыка</li>
-                        <li>Салонный стиль</li>
-                        <li>Классика</li>
-                        <li>Новый год</li>
+                        <li data-open="true" data-id=0 onclick="handleClickCategory(this)">Джаз каверы</li>
+                        <li data-open="false" data-id=1 onclick="handleClickCategory(this)">Киномузыка</li>
+                        <li data-open="false" data-id=2 onclick="handleClickCategory(this)">Салонный стиль</li>
+                        <li data-open="false" data-id=3 onclick="handleClickCategory(this)">Классика</li>
+                        <li data-open="false" data-id=4 onclick="handleClickCategory(this)">Новый год</li>
                     </ul>
                 </div>
 
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
+                <div id="songs-container" class="songs-container">
+                    <div class="song-item">
+                        <span class="song-item-index">1</span>
+                        <span class="song-item-title">Title</span>
+                        <span class="song-item-author">Author</span>
+                    </div>
+                    <div class="song-item">
+                        <span class="song-item-index">1</span>
+                        <span class="song-item-title">Title</span>
+                        <span class="song-item-author">Author</span>
+                    </div>
+                </div>
                 <div class="footer">
                     <span>
                         А также мы играем <span class="highlight">любую музыку</span> по Вашему заказу

@@ -90,3 +90,39 @@ dialog .footer span {
 dialog .highlight {
     color: #EE5533;
 }
+
+
+.songs-container {
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.song-item {
+    box-sizing: border-box;
+    padding-left: 36px;
+    flex: 0 1 calc(50% - 6px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.song-item-index {
+    color: #b3b3b3;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+}
+
+.song-item-title {
+    color: white;
+    font-size: 14px;
+}
+
+.song-item-author {
+    color: #b3b3b3;
+    font-size: 11px;
+}
