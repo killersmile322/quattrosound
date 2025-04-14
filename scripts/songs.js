@@ -1,22 +1,22 @@
 const songs = [
-    {
-        name: "Скелетики",
-        path: "https://cdn.jsdelivr.net/gh/killersmile322/quattrosound@develop/music/Andrew%20Gold%20-%20Spooky%20scary%20skeletons%20(mlg%20edit)2.mp3",
-        artist: "Andrew Gold",
-        background: "images/player/skeletons.jpg",
-    },
-    {
-        name: "Песня девочки",
-        path: "https://cdn.jsdelivr.net/gh/killersmile322/quattrosound@develop/music/Noga%20Erez%20-%20Dance%20while%20You%20Shoot.mp3",
-        artist: "Noga Erez",
-        background: "images/player/Noga-Erez.jpeg",
-    },
-    {
-        name: "НАРУТО!",
-        path: "https://cdn.jsdelivr.net/gh/killersmile322/quattrosound@develop/music/Akatsuki%20Theme%20-%20Pain.mp3",
-        artist: "Akatsuki",
-        background: "images/player/naruto-pain.jpg",
-    },
+    // {
+    //     name: "Скелетики",
+    //     path: "https://cdn.jsdelivr.net/gh/killersmile322/quattrosound@develop/music/Andrew%20Gold%20-%20Spooky%20scary%20skeletons%20(mlg%20edit)2.mp3",
+    //     artist: "Andrew Gold",
+    //     background: "images/player/skeletons.jpg",
+    // },
+    // {
+    //     name: "Песня девочки",
+    //     path: "https://cdn.jsdelivr.net/gh/killersmile322/quattrosound@develop/music/Noga%20Erez%20-%20Dance%20while%20You%20Shoot.mp3",
+    //     artist: "Noga Erez",
+    //     background: "images/player/Noga-Erez.jpeg",
+    // },
+    // {
+    //     name: "НАРУТО!",
+    //     path: "https://cdn.jsdelivr.net/gh/killersmile322/quattrosound@develop/music/Akatsuki%20Theme%20-%20Pain.mp3",
+    //     artist: "Akatsuki",
+    //     background: "images/player/naruto-pain.jpg",
+    // },
     {
         name: "Струнный квартет",
         path: "music/Эдвард_Григ_Струнный_квартет_соль_минор_Op_27.mp3",
