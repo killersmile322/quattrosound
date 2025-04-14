@@ -18,3 +18,31 @@ const songs = [
         background: "images/player/naruto-pain.jpg",
     },
 ];
+
+const interactiveSongsContainer = document.getElementById(
+    "interactive-songs-container"
+);
+const fillInteractoveSongsContainer = () => {
+    songs.forEach((song, index) => {
+        const songItem = document.createElement("div");
+        songItem.classList.add("song-item");
+        songItem.innerHTML = `
+            <span class="song-item-index">${index + 1}</span>
+            <img src="${song.background}" />
+            <span class="song-item-title">${song.name}</span>
+            <span class="song-item-author">${song.artist}</span>
+        `;
+        songItem.onclick = (e) => {
+            setMusic(index);
+            if (playBtn.className.includes("pause")) {
+                music.play();
+            } else {
+                music.pause();
+            }
+            // playBtn.classList.toggle('pause-btn');
+            playBtn.classList.toggle("pause");
+        };
+        interactiveSongsContainer?.appendChild(songItem);
+    });
+};
+fillInteractoveSongsContainer();

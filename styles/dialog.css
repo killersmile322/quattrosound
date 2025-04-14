@@ -11,7 +11,6 @@ dialog {
     background-color: #161616;
     color: #f7f7f7;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 dialog::-webkit-scrollbar {

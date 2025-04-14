@@ -9,6 +9,7 @@ function sendDataToTelegram(formData) {
 📩 Вам новая заявка:
 <b>Имя:</b> ${formData.firstName}
 <b>Фамилия:</b> ${formData.lastName}
+<b>Телефон:</b> ${formData.phone}
     `;
 
     // Параметры, которые будем отправлять
@@ -43,6 +44,7 @@ contactUsForm.addEventListener("submit", (e) => {
         // Собираем данные из формы
         firstName: document.getElementById("firstName").value,
         lastName: document.getElementById("lastName").value,
+        phone: document.getElementById("phone-field").value,
     };
 
     // Показать состояние загрузки

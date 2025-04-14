@@ -85,8 +85,20 @@ button.action-button:hover {
 /* UP-BUTTON */
 
 .up-button {
-    width: 150px;
-    height: 150px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.8;
+    border: none;
+}
+
+.up-button:hover {
+    opacity: 1;
 }
 
 /* FOOTER */
@@ -129,4 +141,33 @@ button.action-button:hover {
 .footer-logo {
     margin: auto;
     margin-bottom: 90px;
+}
+
+#interactive-songs-container {
+    background-color: #121212;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+#interactive-songs-container .song-item:hover {
+    opacity: 0.9;
+}
+
+#interactive-songs-container .song-item {
+    cursor: pointer;
+    flex: 1 1 100%;
+    padding-left: 64px;
+}
+
+#interactive-songs-container img {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    object-fit: cover;
+    position: absolute;
+    left: 18px;
 }

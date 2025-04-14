@@ -45,6 +45,23 @@ const allSongs = [
 ];
 
 const dialog = document.querySelector("dialog");
+
+const songsContainer = dialog.querySelector("#songs-container");
+const fillSongsContainer = (categoryIndex) => {
+    songsContainer.innerHTML = "";
+    allSongs[categoryIndex].songs.forEach((song, index) => {
+        const songItem = document.createElement("div");
+        songItem.classList.add("song-item");
+        songItem.innerHTML = `
+            <span class="song-item-index">${index + 1}</span>
+            <span class="song-item-title">${song.title}</span>
+            <span class="song-item-author">${song.author}</span>
+        `;
+        songsContainer.appendChild(songItem);
+    });
+};
+fillSongsContainer(0);
+
 const showButton = document.getElementById("dialog_show");
 const closeButton = document.getElementById("dialog_close");
 
@@ -77,5 +94,5 @@ const handleClickCategory = (element) => {
         category.dataset.open = false;
     });
     element.dataset.open = true;
-    console.log(allSongs[element.dataset.id])
+    fillSongsContainer(element.dataset.id);
 };

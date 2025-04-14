@@ -52,8 +52,6 @@
                 <img class="promo-photo-one" src="images/soloists-photos/promo-photo-1.png" width="562" height="518">
             </div>
             <div class="socials-and-button">
-                <a class="bottom-button" href="#"><img src="images/down.png.svg"></a>
-                <!-- мб сделать чуть больше?? уж очень мелкая-->
                 <ul class="socials-list">
                     <li class="socials-item"><a href="#">YouTube</a></li>
                     <li class="socials-item"><a href="#">Instagram</a></li>
@@ -293,7 +291,13 @@
                     </div>
                 </div>
             </div>
+
+            <div id="interactive-songs-container">
+
+            </div>
+
             <button class="action-button" id="dialog_show">Посмотреть все</button>
+
             <dialog>
                 <h3>Посмотреть готовые тематические программы:</h3>
 
@@ -308,18 +312,9 @@
                     </ul>
                 </div>
 
-                <div id="songs-container" class="songs-container">
-                    <div class="song-item">
-                        <span class="song-item-index">1</span>
-                        <span class="song-item-title">Title</span>
-                        <span class="song-item-author">Author</span>
-                    </div>
-                    <div class="song-item">
-                        <span class="song-item-index">1</span>
-                        <span class="song-item-title">Title</span>
-                        <span class="song-item-author">Author</span>
-                    </div>
-                </div>
+                <!-- заполняется динамически в dialog.js -->
+                <div id="songs-container" class="songs-container"></div>
+
                 <div class="footer">
                     <span>
                         А также мы играем <span class="highlight">любую музыку</span> по Вашему заказу
@@ -329,6 +324,7 @@
                     </button>
                 </div>
             </dialog>
+
         </section>
 
         <section id="attitude" class="attitude">
@@ -450,22 +446,22 @@
     <footer>
         <div class="main-footer">
             <div class="footer-info">
-                <p class="footer-info-text">WE ARE ALWAYS THRILLED TO MEET NEW CLIENTS. <br> GIVE US A CALL
-                    <span>+32 (0) 477 05 77 21</span> , EMAIL <br>
-                    <span>xINFO@PROJECTBANG.AGENCY</span> OR <span>VISIT US</span>
+                <p class="footer-info-text">МЫ ВСЕГДА РАДЫ НОВЫМ КЛИЕНТАМ. <br /> ПОЗВОНИТЕ НАМ.<br />
+                    <span>+8(800)555-35-35</span> <br>ИЛИ ПИШИТЕ НА EMAIL <br>
+                    <span>quattro@sound.com</span>
                 </p>
-                <p class="all-rights">— ©2025 PROJECT BANG AGENCY</p>
+                <p class="all-rights">— ©2025 QUATTRTOSOUND</p>
             </div>
             <div class="footer-logo">
                 <img src="images/logo-footer.svg" alt="logo">
             </div>
         </div>
     </footer>
-    <script src="scripts/songs.js"></script>
     <script src="scripts/telegram.js"></script>
     <script src="scripts/dialog.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="scripts/index.js?v=1"></script>
+    <script src="scripts/songs.js"></script>
 </body>
 
 </html>
