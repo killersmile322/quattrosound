@@ -17,12 +17,62 @@ const songs = [
         artist: "Akatsuki",
         background: "images/player/naruto-pain.jpg",
     },
+    {
+        name: "Струнный квартет",
+        path: "music/Эдвард_Григ_Струнный_квартет_соль_минор_Op_27.mp3",
+        artist: "Григ",
+        background: "images/player/grieg.jpg",
+    },
+    {
+        name: "Струнный квартет",
+        path: "music/Y2mate.mx - Alexander Borodin - String Quartet No. 1 (128 kbps).mp3",
+        artist: "Бородин",
+        background: "images/player/borodin.jpg",
+    },
+    {
+        name: "Элегическое трио",
+        path: "music/Y2mate.mx - Rachmaninov - Trio élégiaque no. 2, op. 9 (Audio+Sheet) [Kogan_Luzanov_Svetlanov] (128 kbps).mp3",
+        artist: "Рахманинов",
+        background: "images/player/Raxmaninov.jpg",
+    },
 ];
 
 const audioElement = document.querySelector("#audio");
 const playButton = document.querySelector("#play-button");
 const prevButton = document.querySelector("#prev-button");
 const nextButton = document.querySelector("#next-button");
+
+// Музыкальный плеер
+
+const seekBar = document.querySelector(".seek-bar");
+const songName = document.querySelector(".song-name");
+const artistName = document.querySelector(".artist-name");
+const musicBackground = document.querySelector(".music-background");
+// const currentTime;
+// const musicDuration;
+
+const setMusic = (i) => {
+    // console.log(currentMusic)
+    seekBar.value = 0;
+    let song = songs[i];
+    currentMusic = i;
+    audioElement.src = song.path;
+    audioElement.dataset.activeSongIndex = i;
+    setTimeout(() => {
+        seekBar.max = audioElement.duration;
+        // musicDuration.innerHTML = music.duration;
+    }, 300);
+};
+
+setMusic(0);
+
+setInterval(() => {
+    seekBar.value = audioElement.currentTime;
+}, 500);
+
+seekBar.addEventListener("change", () => {
+    audioElement.currentTime = seekBar.value;
+});
 
 let audioContext;
 let track;

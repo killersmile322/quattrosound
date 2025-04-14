@@ -31,39 +31,6 @@ for (let i = 0; i < navButtons.length; i++) {
     });
 }
 
-// Музыкальный плеер
-let currentMusic = 0;
-
-const seekBar = document.querySelector(".seek-bar");
-const songName = document.querySelector(".song-name");
-const artistName = document.querySelector(".artist-name");
-const musicBackground = document.querySelector(".music-background");
-// const currentTime;
-// const musicDuration;
-
-const setMusic = (i) => {
-    // console.log(currentMusic)
-    seekBar.value = 0;
-    let song = songs[i];
-    currentMusic = i;
-    audioElement.src = song.path;
-    audioElement.dataset.activeSongIndex = i;
-    setTimeout(() => {
-        seekBar.max = audioElement.duration;
-        // musicDuration.innerHTML = music.duration;
-    }, 300);
-};
-
-setMusic(0);
-
-setInterval(() => {
-    seekBar.value = audioElement.currentTime;
-}, 500);
-
-seekBar.addEventListener("change", () => {
-    audioElement.currentTime = seekBar.value;
-});
-
 // Форма
 
 const form = document.querySelector("form"),
