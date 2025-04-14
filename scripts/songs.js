@@ -19,19 +19,19 @@ const songs = [
     // },
     {
         name: "Струнный квартет",
-        path: "music/Эдвард_Григ_Струнный_квартет_соль_минор_Op_27.mp3",
+        path: "music/grieg.mp3",
         artist: "Григ",
         background: "images/player/grieg.jpg",
     },
     {
         name: "Струнный квартет",
-        path: "music/Y2mate.mx - Alexander Borodin - String Quartet No. 1 (128 kbps).mp3",
+        path: "music/borodin.mp3",
         artist: "Бородин",
         background: "images/player/borodin.jpg",
     },
     {
         name: "Элегическое трио",
-        path: "music/Y2mate.mx - Rachmaninov - Trio élégiaque no. 2, op. 9 (Audio+Sheet) [Kogan_Luzanov_Svetlanov] (128 kbps).mp3",
+        path: "music/rachmaninov.mp3",
         artist: "Рахманинов",
         background: "images/player/Raxmaninov.jpg",
     },
