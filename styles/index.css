@@ -85,8 +85,20 @@ button.action-button:hover {
 /* UP-BUTTON */
 
 .up-button {
-    width: 150px;
-    height: 150px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.8;
+    border: none;
+}
+
+.up-button:hover {
+    opacity: 1;
 }
 
 /* FOOTER */

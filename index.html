@@ -19,6 +19,7 @@
         <menu>
             <ul class="navigation-list">
                 <li class="navigation-item"><a href="#about-us">О нас</a></li>
+                <li class="navigation-item listen"><a href="#listen">Слушать</a></li>
                 <li class="navigation-item"><a href="#attitude">Наш подход</a></li>
                 <li class="navigation-item"><a href="#clients">Клиенты</a></li>
                 <li class="navigation-item">
@@ -52,8 +53,6 @@
                 <img class="promo-photo-one" src="images/soloists-photos/promo-photo-1.png" width="562" height="518">
             </div>
             <div class="socials-and-button">
-                <a class="bottom-button" href="#"><img src="images/down.png.svg"></a>
-                <!-- мб сделать чуть больше?? уж очень мелкая-->
                 <ul class="socials-list">
                     <li class="socials-item"><a href="#">YouTube</a></li>
                     <li class="socials-item"><a href="#">Instagram</a></li>
@@ -66,45 +65,45 @@
 
         <section class="video-table">
             <div class="video-table-item">
-                <img src="images/music-player-full/Beethoven.jpg">
+                <img src="images/video-table/7M400186.jpg">
                 <div class="track-info">
-                    <p class="track-name">ARGY — NEW WORLD</p>
-                    <p class="track-artist">  /   Animations </p>
+                    <p class="track-name">Выступление такое то</p>
+                    <p class="track-artist">  /   Произведение такое то </p>
                 </div>
             </div>
             <div class="video-table-item">
-                <img src="images/music-player-full/Raxmaninov.jpg">
+                <img src="images/video-table/7M400209.jpg">
                 <div class="track-info">
-                    <p class="track-name">ARGY — NEW WORLD</p>
-                    <p class="track-artist">  /   Animations </p>
+                    <p class="track-name">Выступление такое то</p>
+                    <p class="track-artist">  /  Произведение такое то </p>
                 </div>
             </div>
             <div class="video-table-item">
-                <img src="images/music-player-full/chaik.jpg">
+                <img src="images/video-table/7M400616.jpg">
                 <div class="track-info">
-                    <p class="track-name">ARGY — NEW WORLD</p>
-                    <p class="track-artist">  /   Animations </p>
+                    <p class="track-name">Выступление такое то</p>
+                    <p class="track-artist">  /   Произведение такое то </p>
                 </div>
             </div>
             <div class="video-table-item">
-                <img src="images/music-player-full/Beethoven.jpg">
+                <img src="images/video-table/7M401122.jpg">
                 <div class="track-info">
-                    <p class="track-name">ARGY — NEW WORLD</p>
-                    <p class="track-artist">  /   Animations </p>
+                    <p class="track-name">Выступление такое то</p>
+                    <p class="track-artist">  /  Произведение такое то </p>
                 </div>
             </div>
             <div class="video-table-item">
-                <img src="images/music-player-full/Raxmaninov.jpg">
+                <img src="images/video-table/7M402071.jpg">
                 <div class="track-info">
-                    <p class="track-name">ARGY — NEW WORLD</p>
-                    <p class="track-artist">  /   Animations </p>
+                    <p class="track-name">Выступление такое то</p>
+                    <p class="track-artist">  /   Произведение такое то </p>
                 </div>
             </div>
             <div class="video-table-item">
-                <img src="images/music-player-full/chaik.jpg">
+                <img src="images/video-table/7M402076.jpg">
                 <div class="track-info">
-                    <p class="track-name">ARGY — NEW WORLD</p>
-                    <p class="track-artist">  /   Animations </p>
+                    <p class="track-name">Выступление такое то</p>
+                    <p class="track-artist">  /   Произведение такое то </p>
                 </div>
             </div>
         </section>
@@ -259,24 +258,22 @@
 
         </section>
 
-        <section class="our-music">
+        <section id="listen" class="our-music">
             <h3>Наш репертуар</h3>
-            <div class="music-player">
+            <!-- <div class="music-player">
                 <div class="audio-player">
-                    <audio src="" id="audio"></audio>
+                    <audio crossorigin="anonymous" src="" id="audio"></audio>
                     <div class="promo-player">
                         <h4 class="song-name">
-                            Pesnya
+                            SONG
                         </h4>
                         <p class="artist-name">
-                            Valera
+                            ARTIST
                         </p>
                         <div class="music-background">
                         </div>
                         <div class="song-slider">
                             <input type="range" value="0" class="seek-bar">
-                            <!-- <span class="current-time">00:00</span> Не нужно, тк они будут короткие
-                            <span class="song-duretioin">00:00</span> -->
                         </div>
                         <div class="controls">
                             <button class="btn back-btn">
@@ -292,36 +289,57 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+            <!-- заполняем динамически через songs.js -->
+            <div id="interactive-songs-container">
+                <audio crossorigin="anonymous" src="" id="audio"></audio>
+                <header>
+                    <img class="album-cover" src="images/player/album-cover.jpg" alt="">
+                    <h5>Избранные композиции</h5>
+                    <div>
+                        <span>Превью</span>
+                        <span>Quattrosound</span>
+                    </div>
+                    <input type="range" value="0" class="seek-bar">
+                    <menu>
+                        <div class="actions">
+                            <button id="prev-button">
+                                <image src="images/svg/prev.svg">
+                            </button>
+                            <button class="play-button" id="play-button" data-playing="false">
+                                <image class="play-image" src="images/svg/play.svg" />
+                                <image class="pause-image" src="images/svg/pause.svg" />
+                            </button>
+                            <button id="next-button">
+                                <image src="images/svg/next.svg">
+                            </button>
+                        </div>
+                        <div class="volume-slider">
+                            <image src="images/svg/volume.svg"></image>
+                            <input type="range" id="volume" min="0" max="2" value="1" step="0.01" />
+                        </div>
+                    </menu>
             </div>
+
             <button class="action-button" id="dialog_show">Посмотреть все</button>
+
             <dialog>
                 <h3>Посмотреть готовые тематические программы:</h3>
 
                 <div class="select-genre">
                     <caption>Выберите жанр</caption>
                     <ul>
-                        <li>Джаз каверы</li>
-                        <li>Киномузыка</li>
-                        <li>Салонный стиль</li>
-                        <li>Классика</li>
-                        <li>Новый год</li>
+                        <li data-open="true" data-id=0 onclick="handleClickCategory(this)">Джаз каверы</li>
+                        <li data-open="false" data-id=1 onclick="handleClickCategory(this)">Киномузыка</li>
+                        <li data-open="false" data-id=2 onclick="handleClickCategory(this)">Салонный стиль</li>
+                        <li data-open="false" data-id=3 onclick="handleClickCategory(this)">Классика</li>
+                        <li data-open="false" data-id=4 onclick="handleClickCategory(this)">Новый год</li>
                     </ul>
                 </div>
 
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
-                <div>song</div>
+                <!-- заполняется динамически в dialog.js -->
+                <div id="songs-container" class="songs-container"></div>
+
                 <div class="footer">
                     <span>
                         А также мы играем <span class="highlight">любую музыку</span> по Вашему заказу
@@ -331,6 +349,7 @@
                     </button>
                 </div>
             </dialog>
+
         </section>
 
         <section id="attitude" class="attitude">
@@ -452,21 +471,21 @@
     <footer>
         <div class="main-footer">
             <div class="footer-info">
-                <p class="footer-info-text">WE ARE ALWAYS THRILLED TO MEET NEW CLIENTS. <br> GIVE US A CALL
-                    <span>+32 (0) 477 05 77 21</span> , EMAIL <br>
-                    <span>xINFO@PROJECTBANG.AGENCY</span> OR <span>VISIT US</span>
+                <p class="footer-info-text">МЫ ВСЕГДА РАДЫ НОВЫМ КЛИЕНТАМ. <br /> ПОЗВОНИТЕ НАМ.<br />
+                    <span>+8(800)555-35-35</span> <br>ИЛИ ПИШИТЕ НА EMAIL <br>
+                    <span>quattro@sound.com</span>
                 </p>
-                <p class="all-rights">— ©2025 PROJECT BANG AGENCY</p>
+                <p class="all-rights">— ©2025 QUATTRTOSOUND</p>
             </div>
             <div class="footer-logo">
                 <img src="images/logo-footer.svg" alt="logo">
             </div>
         </div>
     </footer>
-    <script src="scripts/songs.js"></script>
     <script src="scripts/telegram.js"></script>
     <script src="scripts/dialog.js"></script>
     <script src="https://unpkg.com/imask"></script>
+    <script src="scripts/songs.js"></script>
     <script src="scripts/index.js?v=1"></script>
 </body>
 

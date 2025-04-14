@@ -10,6 +10,11 @@
     position: sticky;
     top: 0;
     z-index: 122;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
 }
 
 .main-logo {
@@ -38,6 +43,16 @@
     width: max-content;
     background: transparent;
     color: #c4c4c4;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.navigation-item.listen a {
+    color: #ee5533;
     display: block;
     text-transform: uppercase;
     text-decoration: none;

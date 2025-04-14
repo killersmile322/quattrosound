@@ -9,6 +9,7 @@ function sendDataToTelegram(formData) {
 📩 Вам новая заявка:
 <b>Имя:</b> ${formData.firstName}
 <b>Фамилия:</b> ${formData.lastName}
+<b>Телефон:</b> ${formData.phone}
     `;
 
     // Параметры, которые будем отправлять
@@ -31,8 +32,6 @@ function sendDataToTelegram(formData) {
 const contactUsForm = document.getElementById("contact-us-form");
 const modal = document.getElementById("contact-us-form-modal");
 
-console.log({ contactUsForm, modal });
-
 // Обработчик события отправки формы
 contactUsForm.addEventListener("submit", (e) => {
     console.log("submit");
@@ -43,6 +42,7 @@ contactUsForm.addEventListener("submit", (e) => {
         // Собираем данные из формы
         firstName: document.getElementById("firstName").value,
         lastName: document.getElementById("lastName").value,
+        phone: document.getElementById("phone-field").value,
     };
 
     // Показать состояние загрузки

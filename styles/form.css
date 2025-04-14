@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    height: 100vh;
+    height: fit-content;
     /* max-height: 600px; */
     /* width: 100vw; */
 }
@@ -90,15 +90,16 @@ textarea:focus {
     width: 100%;
 }
 
+.submit-btn {
+    width: 100%;
+}
+
 .submit-btn input {
     padding: 12px 50px;
     border-radius: 25px;
     margin: 25px;
     color: white;
     max-width: 200px;
-    position: absolute;
-    bottom: -150px;
-    left: -30px;
     content: '';
     /* top: 550px;
     left: 90px;

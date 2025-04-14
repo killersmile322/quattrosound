@@ -17,7 +17,7 @@
     margin: 0 auto;
     padding: 30px;
     width: 350px;
-    height: 450px;
+    height: 500px;
     background-color: #56709c;
     border-radius: 20px;
     box-shadow: 0 0 20px #56709c;
@@ -127,4 +127,119 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
+}
+
+#interactive-songs-container {
+    box-sizing: border-box;
+    max-width: 1024px;
+    background-color: #121212;
+    padding: 18px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    position: relative;
+}
+
+#interactive-songs-container header {
+    background: #1F1F1F;
+    border-radius: 12px;
+    padding: 24px;
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+#interactive-songs-container h5 {
+    font-size: 24px;
+}
+
+#interactive-songs-container menu {
+    display: flex;
+    gap: 24px;
+}
+
+#interactive-songs-container menu .actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#interactive-songs-container button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#interactive-songs-container button:hover {
+    opacity: 1;
+}
+
+#interactive-songs-container .volume-slider {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#interactive-songs-container img.album-cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+#interactive-songs-container .song-item:hover {
+    opacity: 0.9;
+}
+
+#interactive-songs-container .song-item {
+    cursor: pointer;
+    flex: 1 1 100%;
+    padding-left: 64px;
+}
+
+#interactive-songs-container .song-item img {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    object-fit: cover;
+    position: absolute;
+    left: 18px;
+}
+
+.play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.play-button[data-playing="true"] .pause-image {
+    display: inline;
+}
+
+.play-button[data-playing="true"] .play-image {
+    display: none;
+}
+
+.play-button[data-playing="false"] .play-image {
+    display: inline;
+}
+
+.play-button[data-playing="false"] .pause-image {
+    display: none;
 }
