@@ -142,32 +142,3 @@ button.action-button:hover {
     margin: auto;
     margin-bottom: 90px;
 }
-
-#interactive-songs-container {
-    background-color: #121212;
-    padding: 12px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-}
-
-#interactive-songs-container .song-item:hover {
-    opacity: 0.9;
-}
-
-#interactive-songs-container .song-item {
-    cursor: pointer;
-    flex: 1 1 100%;
-    padding-left: 64px;
-}
-
-#interactive-songs-container img {
-    width: 36px;
-    height: 36px;
-    border-radius: 36px;
-    object-fit: cover;
-    position: absolute;
-    left: 18px;
-}

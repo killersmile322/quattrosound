@@ -32,8 +32,6 @@ function sendDataToTelegram(formData) {
 const contactUsForm = document.getElementById("contact-us-form");
 const modal = document.getElementById("contact-us-form-modal");
 
-console.log({ contactUsForm, modal });
-
 // Обработчик события отправки формы
 contactUsForm.addEventListener("submit", (e) => {
     console.log("submit");

@@ -19,6 +19,7 @@
         <menu>
             <ul class="navigation-list">
                 <li class="navigation-item"><a href="#about-us">О нас</a></li>
+                <li class="navigation-item listen"><a href="#listen">Слушать</a></li>
                 <li class="navigation-item"><a href="#attitude">Наш подход</a></li>
                 <li class="navigation-item"><a href="#clients">Клиенты</a></li>
                 <li class="navigation-item">
@@ -257,11 +258,11 @@
 
         </section>
 
-        <section class="our-music">
+        <section id="listen" class="our-music">
             <h3>Наш репертуар</h3>
-            <div class="music-player">
+            <!-- <div class="music-player">
                 <div class="audio-player">
-                    <audio src="" id="audio"></audio>
+                    <audio crossorigin="anonymous" src="" id="audio"></audio>
                     <div class="promo-player">
                         <h4 class="song-name">
                             Pesnya
@@ -273,8 +274,6 @@
                         </div>
                         <div class="song-slider">
                             <input type="range" value="0" class="seek-bar">
-                            <!-- <span class="current-time">00:00</span> Не нужно, тк они будут короткие
-                            <span class="song-duretioin">00:00</span> -->
                         </div>
                         <div class="controls">
                             <button class="btn back-btn">
@@ -290,10 +289,36 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
+            </div> -->
+            <!-- заполняем динамически через songs.js -->
             <div id="interactive-songs-container">
-
+                <audio crossorigin="anonymous" src="" id="audio"></audio>
+                <header>
+                    <img class="album-cover" src="images/player/album-cover.jpg" alt="">
+                    <h5>Избранные композиции</h5>
+                    <div>
+                        <span>Превью</span>
+                        <span>Quattrosound</span>
+                    </div>
+                    <input type="range" value="0" class="seek-bar">
+                    <menu>
+                        <div class="actions">
+                            <button id="prev-button">
+                                <image src="images/svg/prev.svg">
+                            </button>
+                            <button class="play-button" id="play-button" data-playing="false">
+                                <image class="play-image" src="images/svg/play.svg" />
+                                <image class="pause-image" src="images/svg/pause.svg" />
+                            </button>
+                            <button id="next-button">
+                                <image src="images/svg/next.svg">
+                            </button>
+                        </div>
+                        <div class="volume-slider">
+                            <image src="images/svg/volume.svg"></image>
+                            <input type="range" id="volume" min="0" max="2" value="1" step="0.01" />
+                        </div>
+                    </menu>
             </div>
 
             <button class="action-button" id="dialog_show">Посмотреть все</button>
@@ -460,8 +485,8 @@
     <script src="scripts/telegram.js"></script>
     <script src="scripts/dialog.js"></script>
     <script src="https://unpkg.com/imask"></script>
-    <script src="scripts/index.js?v=1"></script>
     <script src="scripts/songs.js"></script>
+    <script src="scripts/index.js?v=1"></script>
 </body>
 
 </html>
