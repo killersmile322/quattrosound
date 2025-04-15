@@ -146,11 +146,10 @@
     background: #1F1F1F;
     border-radius: 12px;
     padding: 24px;
-    padding-left: 200px;
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
     position: relative;
     margin-bottom: 12px;
 }
@@ -162,6 +161,7 @@
 #interactive-songs-container menu {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 #interactive-songs-container menu .actions {
@@ -189,13 +189,13 @@
 }
 
 #interactive-songs-container img.album-cover {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 150px;
-    height: 100%;
     border-radius: 12px;
     object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: top;
 }
 
 #interactive-songs-container .song-item:hover {

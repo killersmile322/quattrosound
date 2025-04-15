@@ -10,16 +10,6 @@
     /* width: 100vw; */
 }
 
-#contact-us-form-section header {
-    color: white;
-    font-size: 120px;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
-    line-height: 126px;
-    text-transform: uppercase;
-    vertical-align: middle;
-}
-
 #contact-us-form-section form {
     position: relative;
     display: flex;
@@ -68,6 +58,16 @@ textarea:focus {
     padding: 0;
     /* padding-left:12px; */
 }
+
+@media (width < 768px) {
+
+    .input-field,
+    .input-fields-small {
+        width: 100% !important;
+    }
+
+}
+
 
 .input-fields-small {
     display: flex;
