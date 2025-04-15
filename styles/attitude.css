@@ -27,20 +27,27 @@
 
 .attitude-number {
     background-color: transparent;
-    min-width: 300px;
+    min-width: 100px;
     max-width: 350px;
     padding: 115px 125px;
     box-sizing: border-box;
 }
 
+@media (width < 1300px) {
+    .attitude-number {
+        padding: 20px 24px;
+    }
+}
+
+
 .attitude-items {
     display: flex;
     flex-direction: column;
     gap: 45px;
-    margin-left: 450px;
 }
 
 .attitude-item {
+    justify-content: center;
     display: flex;
     align-items: center;
 }

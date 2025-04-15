@@ -38,6 +38,31 @@ section {
     padding: 0 120px;
 }
 
+@media (width < 1024px) {
+    section {
+        padding: 0 48px !important;
+    }
+    .main-footer {
+        padding: 48px 96px 0 !important;
+    }
+ }
+@media (width < 768px) {
+    section {
+        padding: 0 24px !important;
+    }
+    .main-footer {
+        padding: 24px 48px 0 !important;
+    }
+    h2 {
+        font-size: 64px !important;
+        line-height: 64px !important;
+    }
+    h3 {
+        font-size: 36px !important;
+        line-height: 36px !important;
+    }
+}
+
 a {
     cursor: pointer;
     color: #c4c4c4;
@@ -81,6 +106,10 @@ button.action-button:hover {
     color: #EE5533;
 }
 
+button.action-button:hover a {
+    color: #EE5533;
+}
+
 
 /* UP-BUTTON */
 
@@ -112,6 +141,8 @@ button.action-button:hover {
 
 .footer-info {
     display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
     justify-content: space-between;
 }
 

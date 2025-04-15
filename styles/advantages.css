@@ -10,7 +10,18 @@
 .advantages-item {
     display: flex;
     justify-content: space-between;
-    gap: 300px;
+    gap: 24px;
+}
+
+@media (width < 1300px) {
+    .advantages-item {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .adv-item-right-side {
+        min-width: 100% !important;
+    }
 }
 
 .adv-item-left-side {
@@ -32,11 +43,6 @@
     min-width: 750px;
     max-width: 750px;
 }
-
-/* .adv-item-right-side p {
-    min-width: 470px;
-    min-height: 280px;
-} */
 
 .advantages-item .number {
     font-size: 14px;
