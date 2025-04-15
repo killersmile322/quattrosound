@@ -10,7 +10,7 @@
 .advantages-item {
     display: flex;
     justify-content: space-between;
-    gap: 300px;
+    gap: 250px;
 }
 
 .adv-item-left-side {
