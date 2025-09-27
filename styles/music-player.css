@@ -243,3 +243,7 @@
 .play-button[data-playing="false"] .pause-image {
     display: none;
 }
+
+#dialog_close {
+    margin: 0 auto;
+}
