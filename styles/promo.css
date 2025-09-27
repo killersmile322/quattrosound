@@ -2,7 +2,6 @@
 
 .promo {
     position: relative;
-    flex-wrap: wrap;
     margin: 0 auto;
     padding: 0 !important;
     display: flex;
@@ -10,13 +9,29 @@
     justify-content: center;
 
     min-height: calc(100vh - 87px);
+    background-repeat: no-repeat;
+}
+
+@media (width < 1200px) {
+    .promo {
+        flex-wrap: wrap;
+        margin-top: 80px;
+        width: 100%;
+        background-position: top center;
+    }
+}
+
+@media (width < 768px) {
+    .promo {
+        box-sizing: border-box;
+        padding: 0 24px !important;
+    }
 }
 
 .promo-block {
     position: relative;
     display: flex;
     width: 570px;
-    height: 400px;
     color: #ffffff;
     flex-direction: column;
     justify-content: space-between;
@@ -31,26 +46,38 @@
 }
 
 .promo-big-logo {
-    position: absolute;
     content: '';
     z-index: 0;
-    top: -60px;
-    left: -20px;
+    max-width: 568px;
+    max-height: 665px;
 }
 
 .promo-name-one {
     display: block;
     position: relative;
     z-index: 3;
-    position: absolute;
     background: transparent;
     width: max-content;
-    left: -110px;
     font-family: 'Great Vibes', cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 128px;
+    line-height: 120px;
     top: -70px;
+}
+
+@media (width < 1200px) {
+    .promo-name-one {
+        position: relative;
+        width: fit-content;
+    }
+}
+
+@media (width < 768px) {
+    .promo-name-one {
+        font-size: 64px;
+        line-height: 60px;
+    }
 }
 
 .promo-name {
@@ -70,10 +97,7 @@
 }
 
 .promo-info-block {
-    top: -70px;
     position: relative;
-    width: 240px;
-    height: 76px;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
@@ -102,7 +126,6 @@
     position: relative;
     display: block;
     width: 210px;
-    color: #ffffff;
     text-decoration: none;
     font-weight: 300;
     padding: 24px 48px;
@@ -116,8 +139,22 @@
 
 .promo-photo-player {
     position: relative;
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     padding-bottom: 140px;
+}
+
+
+@media (width < 768px) {
+    .promo-photo-player {
+        padding-bottom: 0;
+    }
+}
+
+.promo-photo-player img {
+    width: 100%;
+    max-width: 562px;
+    max-height: 518px;
 }
 
 .promo-main-photo {
@@ -133,15 +170,28 @@
     content: '';
 }
 
+@media (width < 1024px) {
+    .promo-photo-one {
+        position: initial;
+    }
+}
+
 .socials-and-button {
     position: absolute;
     bottom: 40px;
     box-sizing: border-box;
-    display: block;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
+}
+
+@media (width < 1024px) {
+    .socials-and-button {
+        margin-top: 24px;
+        position: initial;
+        justify-content: center;
+    }
 }
 
 .bottom-button {
@@ -158,6 +208,12 @@
     width: 450px;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
+}
+
+@media (width < 768px) {
+    .socials-list {
+        flex-direction: column;
+    }
 }
 
 .socials-item a {

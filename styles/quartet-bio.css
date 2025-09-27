@@ -14,10 +14,10 @@
 
 .quartet-bio-table {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .quartet-bio-item {
@@ -25,11 +25,13 @@
     background-color: #1f1f1f;
     border-radius: 12px;
     border: none;
+
     display: flex;
-    flex-direction: column;
     gap: 24px;
-    min-width: 350px;
-    min-height: 350px;
-    max-width: 350px;
-    max-height: 400px;
+    flex-direction: column;
+
+    flex: 1 1 280px !important;
+    max-width: 440px;
+    width: unset !important;
+    min-height: 420px;
 }
